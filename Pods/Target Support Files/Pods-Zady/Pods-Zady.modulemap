@@ -1,0 +1,6 @@
+module Pods_Zady {
+  umbrella header "Pods-Zady-umbrella.h"
+
+  export *
+  module * { export * }
+}
