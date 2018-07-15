@@ -11,10 +11,15 @@ import UIKit
 class ViewController: UIViewController {
 
     @IBOutlet weak var label: UILabel!
+    let locationManager = ZADLocationManager.init()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ZADStrings.currentLangugae = "en"
         label.text = ZADStrings().localizedStringWithKey(key: "seasonsGreetings")
+        
+        locationManager.requestAuthorization()
+
         // Do any additional setup after loading the view, typically from a nib.
     }
 
