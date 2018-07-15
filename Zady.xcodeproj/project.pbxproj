@@ -18,6 +18,7 @@
 		E19EBF1520F7D9440031CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */; };
 		E19EBF2020F7D9440031CE01 /* ZadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF1F20F7D9440031CE01 /* ZadyTests.swift */; };
 		E19EBF2B20F7D9440031CE01 /* ZadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */; };
+		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		E19EBF2620F7D9440031CE01 /* ZadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZadyUITests.swift; sourceTree = "<group>"; };
 		E19EBF2C20F7D9440031CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E6A2EBB606B8434E36FC09C1 /* Pods-ZadyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyTests/Pods-ZadyTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -158,6 +160,7 @@
 		E19EBF0920F7D9420031CE01 /* Zady */ = {
 			isa = PBXGroup;
 			children = (
+				E1C2EA7020FC063B008CDACA /* Helper */,
 				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
 				E19EBF0C20F7D9420031CE01 /* ViewController.swift */,
 				E19EBF0E20F7D9420031CE01 /* Main.storyboard */,
@@ -184,6 +187,14 @@
 				E19EBF2C20F7D9440031CE01 /* Info.plist */,
 			);
 			path = ZadyUITests;
+			sourceTree = "<group>";
+		};
+		E1C2EA7020FC063B008CDACA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E1C2EA7120FC0670008CDACA /* ZADStrings.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -395,6 +406,7 @@
 			files = (
 				E19EBF0D20F7D9420031CE01 /* ViewController.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
+				E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

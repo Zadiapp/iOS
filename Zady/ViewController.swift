@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var label: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        ZADStrings.currentLangugae = "en"
+        label.text = ZADStrings().localizedStringWithKey(key: "seasonsGreetings")
         // Do any additional setup after loading the view, typically from a nib.
     }
 
