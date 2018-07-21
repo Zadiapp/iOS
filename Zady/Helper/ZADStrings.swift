@@ -8,11 +8,47 @@
 
 import UIKit
 
+public enum Langugage:String {
+    case arabic = "ar"
+    case english = "en"
+}
+
+protocol ZADStringsProtocol {
+    func didLangugageChanged ()
+}
+
 class ZADStrings: NSObject {
-    static var currentLangugae = "ar"
+    static let sharedInstance = ZADStrings()
+    private var currentLangugae:Langugage = .arabic
+    
+    var viewControllers:[String:ZADStringsProtocol] = [:]
+    
+    func registerLangugaeUpdate(name:String?, viewController:ZADStringsProtocol) {
+        if let name = name {
+            viewControllers[name] = viewController
+        }
+    }
+    
+    func unregisterLangugaeUpdate(name:String?) {
+        if let name = name {
+            viewControllers.removeValue(forKey: name)
+        }
+    }
+    
+    func notifyViewController() {
+        for (_, viewController) in viewControllers {
+            viewController.didLangugageChanged()
+        }
+    }
+    
+    func changeLangugage(lang: Langugage) {
+        if lang != currentLangugae {
+            currentLangugae = lang
+        }
+    }
     
     func localizedStringWithKey(key:String) -> String {
-        let bundle = bundleWtihLanguage(lang: ZADStrings.currentLangugae)
+        let bundle = bundleWtihLanguage(lang: ZADStrings.sharedInstance.currentLangugae.rawValue)
         guard let localizationBundle = bundle else {
             return ""
         }
