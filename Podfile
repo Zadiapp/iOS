@@ -7,6 +7,7 @@ target 'Zady' do
 pod 'Alamofire'
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'SwiftyJSON'
 
   # Pods for Zady
 

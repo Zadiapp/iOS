@@ -11,6 +11,11 @@
 		483942192C1A5764A8AC05EF /* libPods-Zady.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 088CEDF6CAB180EA65DAF4EC /* libPods-Zady.a */; };
 		C6DB30BB1FB7ADDE70A900A0 /* libPods-ZadyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B492E9152103E9896494313 /* libPods-ZadyUITests.a */; };
 		E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1014FA620FAABB7008F0B4C /* Localizable.strings */; };
+		E12A63B221032D79008167E4 /* ZADRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B121032D79008167E4 /* ZADRequest.swift */; };
+		E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B32103357E008167E4 /* ZADEnvironment.swift */; };
+		E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B5210335AC008167E4 /* ZADDispatcher.swift */; };
+		E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */; };
+		E12A63BA21034CD9008167E4 /* ZADResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B921034CD9008167E4 /* ZADResponse.swift */; };
 		E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */; };
 		E19EBF0D20F7D9420031CE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF0C20F7D9420031CE01 /* ViewController.swift */; };
 		E19EBF1020F7D9420031CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19EBF0E20F7D9420031CE01 /* Main.storyboard */; };
@@ -51,6 +56,11 @@
 		E1014FA520FAABB7008F0B4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1014FA720FAABBD008F0B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1014FA820FAACB4008F0B4C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		E12A63B121032D79008167E4 /* ZADRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequest.swift; sourceTree = "<group>"; };
+		E12A63B32103357E008167E4 /* ZADEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADEnvironment.swift; sourceTree = "<group>"; };
+		E12A63B5210335AC008167E4 /* ZADDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDispatcher.swift; sourceTree = "<group>"; };
+		E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADNetworkDispatcher.swift; sourceTree = "<group>"; };
+		E12A63B921034CD9008167E4 /* ZADResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADResponse.swift; sourceTree = "<group>"; };
 		E19EBF0720F7D9420031CE01 /* Zady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zady.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19EBF0C20F7D9420031CE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -131,9 +141,22 @@
 		E1014FA920FAACCB008F0B4C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E19EBF1120F7D9440031CE01 /* Assets.xcassets */,
 				E1014FA120FAAB86008F0B4C /* Localization */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		E12A63AE21032D34008167E4 /* NetworkLayer */ = {
+			isa = PBXGroup;
+			children = (
+				E12A63B121032D79008167E4 /* ZADRequest.swift */,
+				E12A63B32103357E008167E4 /* ZADEnvironment.swift */,
+				E12A63B5210335AC008167E4 /* ZADDispatcher.swift */,
+				E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */,
+				E12A63B921034CD9008167E4 /* ZADResponse.swift */,
+			);
+			path = NetworkLayer;
 			sourceTree = "<group>";
 		};
 		E19EBEFE20F7D9420031CE01 = {
@@ -162,11 +185,11 @@
 		E19EBF0920F7D9420031CE01 /* Zady */ = {
 			isa = PBXGroup;
 			children = (
+				E12A63AE21032D34008167E4 /* NetworkLayer */,
 				E1C2EA7020FC063B008CDACA /* Helper */,
 				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
 				E19EBF0C20F7D9420031CE01 /* ViewController.swift */,
 				E19EBF0E20F7D9420031CE01 /* Main.storyboard */,
-				E19EBF1120F7D9440031CE01 /* Assets.xcassets */,
 				E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */,
 				E19EBF1620F7D9440031CE01 /* Info.plist */,
 			);
@@ -407,9 +430,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12A63B221032D79008167E4 /* ZADRequest.swift in Sources */,
+				E12A63BA21034CD9008167E4 /* ZADResponse.swift in Sources */,
+				E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */,
 				E19EBF0D20F7D9420031CE01 /* ViewController.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */,
+				E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */,
+				E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */,
 				E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -598,6 +626,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Zady/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
