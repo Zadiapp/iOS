@@ -14,7 +14,7 @@ public protocol ZADDispatcher {
     /// - Parameter environment: environment configuration
     init(environment: ZADEnvironment)
         
-    /// This function execute the request and provide a Promise
+    /// This function execute the request and provide a compeltionHandler
     /// with the response.
     ///
     /// - Parameter request: request to execute

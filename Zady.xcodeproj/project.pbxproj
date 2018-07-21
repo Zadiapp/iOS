@@ -16,6 +16,7 @@
 		E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B5210335AC008167E4 /* ZADDispatcher.swift */; };
 		E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */; };
 		E12A63BA21034CD9008167E4 /* ZADResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B921034CD9008167E4 /* ZADResponse.swift */; };
+		E12A63BC21035E82008167E4 /* ZADOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63BB21035E82008167E4 /* ZADOperation.swift */; };
 		E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */; };
 		E19EBF0D20F7D9420031CE01 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF0C20F7D9420031CE01 /* ViewController.swift */; };
 		E19EBF1020F7D9420031CE01 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19EBF0E20F7D9420031CE01 /* Main.storyboard */; };
@@ -61,6 +62,7 @@
 		E12A63B5210335AC008167E4 /* ZADDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDispatcher.swift; sourceTree = "<group>"; };
 		E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADNetworkDispatcher.swift; sourceTree = "<group>"; };
 		E12A63B921034CD9008167E4 /* ZADResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADResponse.swift; sourceTree = "<group>"; };
+		E12A63BB21035E82008167E4 /* ZADOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADOperation.swift; sourceTree = "<group>"; };
 		E19EBF0720F7D9420031CE01 /* Zady.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zady.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E19EBF0C20F7D9420031CE01 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				E12A63B5210335AC008167E4 /* ZADDispatcher.swift */,
 				E12A63B721033E1F008167E4 /* ZADNetworkDispatcher.swift */,
 				E12A63B921034CD9008167E4 /* ZADResponse.swift */,
+				E12A63BB21035E82008167E4 /* ZADOperation.swift */,
 			);
 			path = NetworkLayer;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 				E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */,
 				E19EBF0D20F7D9420031CE01 /* ViewController.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
+				E12A63BC21035E82008167E4 /* ZADOperation.swift in Sources */,
 				E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */,
 				E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */,
 				E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */,
