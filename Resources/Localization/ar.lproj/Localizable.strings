@@ -5,4 +5,5 @@
   Created by khaled mohamed el morabea on 7/15/18.
   Copyright © 2018 Zadi. All rights reserved.
 */
-"seasonsGreetings" = "Arabic";
+"selectLangugageTitle" = "إختر اللغه";
+"selectLanguageDescription" = "يمكنك دائمًا تغيير لغة التطبيق في إعدادات التطبيق";

@@ -5,4 +5,5 @@
   Created by khaled mohamed el morabea on 7/15/18.
   Copyright © 2018 Zadi. All rights reserved.
 */
-"seasonsGreetings" = "English";
+"selectLangugageTitle" = "Select Language";
+"selectLanguageDescription" = "You can always change the application language in the application settings";

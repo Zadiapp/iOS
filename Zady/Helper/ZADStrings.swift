@@ -19,10 +19,12 @@ protocol ZADStringsProtocol {
 
 class ZADStrings: NSObject {
     static let sharedInstance = ZADStrings()
-    private var currentLangugae:Langugage = .arabic
-    
+    private var currentLangugae:Langugage = .english
     var viewControllers:[String:ZADStringsProtocol] = [:]
     
+    var selectLanguageTitle:String  {get {return localizedStringWithKey(key: "selectLangugageTitle")}}
+    var selectLanguageDescription:String  {get {return localizedStringWithKey(key: "selectLanguageDescription")}}
+
     func registerLangugaeUpdate(name:String?, viewController:ZADStringsProtocol) {
         if let name = name {
             viewControllers[name] = viewController

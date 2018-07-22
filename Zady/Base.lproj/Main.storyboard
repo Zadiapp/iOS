@@ -18,27 +18,50 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6am-a7-xvW">
-                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB7-G1-XUg">
+                                <rect key="frame" x="0.0" y="113" width="375" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="la6-yb-C4u">
+                                <rect key="frame" x="0.0" y="144.5" width="375" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_step_lang" translatesAutoresizingMaskIntoConstraints="NO" id="jFs-Zg-a4q">
+                                <rect key="frame" x="56" y="205" width="263" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="263" id="dLB-kR-Ys1"/>
+                                    <constraint firstAttribute="height" constant="200" id="gP0-aR-mfc"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.9882352941176471" green="0.9882352941176471" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6am-a7-xvW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="SaM-Ng-AdK"/>
-                            <constraint firstItem="6am-a7-xvW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="T7Z-q5-Joa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qB7-G1-XUg" secondAttribute="trailing" id="F1C-jq-vng"/>
+                            <constraint firstItem="la6-yb-C4u" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N7c-sr-U9i"/>
+                            <constraint firstItem="jFs-Zg-a4q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qge-aF-65L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="la6-yb-C4u" secondAttribute="trailing" id="XMy-Eg-EGh"/>
+                            <constraint firstItem="qB7-G1-XUg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="93" id="Zam-6h-Izh"/>
+                            <constraint firstItem="jFs-Zg-a4q" firstAttribute="top" secondItem="la6-yb-C4u" secondAttribute="bottom" constant="40" id="jk3-WS-slh"/>
+                            <constraint firstItem="qB7-G1-XUg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="tdP-PY-g8k"/>
+                            <constraint firstItem="la6-yb-C4u" firstAttribute="top" secondItem="qB7-G1-XUg" secondAttribute="bottom" constant="11" id="uec-Ww-BIc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="label" destination="6am-a7-xvW" id="Zgs-QH-Hfh"/>
+                        <outlet property="selectLanguageDescLabel" destination="la6-yb-C4u" id="kvk-uq-orm"/>
+                        <outlet property="selectLanguageTitleLabel" destination="qB7-G1-XUg" id="hcO-aQ-Xfe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="116" y="8"/>
+            <point key="canvasLocation" x="-271" y="21"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ic_step_lang" width="263" height="200"/>
+    </resources>
 </document>

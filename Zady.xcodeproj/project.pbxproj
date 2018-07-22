@@ -27,6 +27,7 @@
 		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
+		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +56,6 @@
 		BD5B0678E1D6B05AF367284F /* libPods-Zady.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zady.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07ABF18B8827876B869F613 /* Pods-ZadyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		E1014FA520FAABB7008F0B4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
-		E1014FA720FAABBD008F0B4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1014FA820FAACB4008F0B4C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E12A63B121032D79008167E4 /* ZADRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequest.swift; sourceTree = "<group>"; };
 		E12A63B32103357E008167E4 /* ZADEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADEnvironment.swift; sourceTree = "<group>"; };
@@ -79,6 +79,7 @@
 		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
+		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
 		EF1313E41C39ED18A0394AA6 /* Pods-ZadyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F264E7A4B3417879A24FF09D /* Pods-Zady.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zady.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zady/Pods-Zady.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,9 +178,9 @@
 		E19EBF0920F7D9420031CE01 /* Zady */ = {
 			isa = PBXGroup;
 			children = (
+				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
 				E12A63AE21032D34008167E4 /* NetworkLayer */,
 				E1C2EA7020FC063B008CDACA /* Helper */,
-				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
 				E1E66EAF2103E08A00AEAE68 /* VCs */,
 				E19EBF0E20F7D9420031CE01 /* Main.storyboard */,
 				E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */,
@@ -209,6 +210,7 @@
 		E1C2EA7020FC063B008CDACA /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				E1E66EB2210404C000AEAE68 /* ZADColors.swift */,
 				E1C2EA7120FC0670008CDACA /* ZADStrings.swift */,
 				E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */,
 			);
@@ -451,6 +453,7 @@
 				E19EBF0D20F7D9420031CE01 /* ZADSelectLanguageVC.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E12A63BC21035E82008167E4 /* ZADOperation.swift in Sources */,
+				E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */,
 				E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */,
 				E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */,
 				E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */,
@@ -494,7 +497,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				E1014FA520FAABB7008F0B4C /* en */,
-				E1014FA720FAABBD008F0B4C /* Base */,
 				E1014FA820FAACB4008F0B4C /* ar */,
 			);
 			name = Localizable.strings;
