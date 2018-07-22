@@ -74,6 +74,27 @@ class ZADSelectLanguageVC: ZADViewController {
     
     func changeLanguge(languge:Langugage) {
         ZADStrings.sharedInstance.changeLangugage(lang: languge)
+        showNextView()
+    }
+    
+    func showNextView() {
+        if  ZADLocationManager.sharedInstance.isLocationAuthorized() {
+            showRequestNotifictaionVC()
+        } else {
+            showRequestLocationVC()
+        }
+    }
+    
+    func showRequestLocationVC() {
+        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
+            self.performSegue(withIdentifier: "showLocation", sender: nil)
+        }
+    }
+    
+    func showRequestNotifictaionVC() {
+        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
+            self.performSegue(withIdentifier: "showNotification", sender: nil)
+        }
     }
     
     override func didReceiveMemoryWarning() {

@@ -9,9 +9,16 @@
 import UIKit
 import CoreLocation
 
+protocol ZADLocationManagerProtocol {
+    func didAcquireLocation(acuireLocation:Bool);
+}
+
 class ZADLocationManager: NSObject {
-    let locationManager = CLLocationManager()
+    static let sharedInstance = ZADLocationManager()
+    var delegate:ZADLocationManagerProtocol?
     
+    private let locationManager = CLLocationManager()
+
     override init() {
         super.init()
         
@@ -21,10 +28,16 @@ class ZADLocationManager: NSObject {
     func requestAuthorization() {
         locationManager.requestWhenInUseAuthorization()
     }
+    
+    func isLocationAuthorized() -> Bool {
+        return (CLLocationManager.authorizationStatus() == .authorizedWhenInUse)
+    }
 }
 
 extension ZADLocationManager:CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        
+        if let delegate = self.delegate {
+            delegate.didAcquireLocation(acuireLocation: (status == .authorizedWhenInUse))
+        }
     }
 }

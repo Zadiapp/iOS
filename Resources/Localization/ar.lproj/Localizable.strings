@@ -7,3 +7,8 @@
 */
 "selectLangugageTitle" = "إختر اللغه";
 "selectLanguageDescription" = "يمكنك دائمًا تغيير لغة التطبيق في إعدادات التطبيق";
+"requestLocationTitle" = "مكانك";
+"requestLocationDescription" = "نحن بحاجة إلى أن يكون لديك موقع لإظهار أقرب محلات السوبر ماركت لك";
+"allow" = "السماح";
+"requestNotificationTitle" = "السماح الإخطارات";
+"requestNotificationDescription" = "يساعدنا في إبقائك على اطلاع بالخطوات الجديدة على طلبك ، ولن نسبب إزعاجك";
