@@ -46,6 +46,7 @@ class ZADStrings: NSObject {
     func changeLangugage(lang: Langugage) {
         if lang != currentLangugae {
             currentLangugae = lang
+            notifyViewController()
         }
     }
     

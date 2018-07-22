@@ -28,6 +28,7 @@
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
 		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
+		E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB5210409CF00AEAE68 /* ZADButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,7 @@
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
 		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
+		E1E66EB5210409CF00AEAE68 /* ZADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADButton.swift; sourceTree = "<group>"; };
 		EF1313E41C39ED18A0394AA6 /* Pods-ZadyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F264E7A4B3417879A24FF09D /* Pods-Zady.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zady.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zady/Pods-Zady.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -179,6 +181,7 @@
 			isa = PBXGroup;
 			children = (
 				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
+				E1E66EB4210409B800AEAE68 /* Views */,
 				E12A63AE21032D34008167E4 /* NetworkLayer */,
 				E1C2EA7020FC063B008CDACA /* Helper */,
 				E1E66EAF2103E08A00AEAE68 /* VCs */,
@@ -224,6 +227,14 @@
 				E19EBF0C20F7D9420031CE01 /* ZADSelectLanguageVC.swift */,
 			);
 			path = VCs;
+			sourceTree = "<group>";
+		};
+		E1E66EB4210409B800AEAE68 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E1E66EB5210409CF00AEAE68 /* ZADButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		ED98BD6E050043861F6EECF1 /* Pods */ = {
@@ -457,6 +468,7 @@
 				E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */,
 				E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */,
 				E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */,
+				E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */,
 				E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
