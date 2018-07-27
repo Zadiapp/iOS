@@ -17,6 +17,11 @@ class ZADRequestMapLocationVC: UIViewController {
     @IBOutlet weak var confirmButton:ZADButton!
     @IBOutlet weak var searchView:UIView!
     @IBOutlet weak var mapView:MKMapView!
+    @IBOutlet weak var searchResultsTableView:UITableView!
+    @IBOutlet weak var searchResultsTableViewHeight:NSLayoutConstraint!
+    var mapItems:[MKMapItem]?
+    let maximumSearchResultsTableViwHeight = CGFloat(44 * 5);
+    
     var mapLocationController:ZADMapLocationController = ZADMapLocationController()
 
     override func viewDidLoad() {
@@ -28,6 +33,12 @@ class ZADRequestMapLocationVC: UIViewController {
         super.viewWillAppear(animated)
         applyTheme()
         setupMapView()
+        setupView()
+    }
+    
+    func setupView() {
+        self.clearSearchButton.isHidden = true
+        self.searchResultsTableView.isHidden = true
     }
     
     func setupMapView() {
@@ -45,22 +56,48 @@ class ZADRequestMapLocationVC: UIViewController {
     
     @IBAction func clearSearch() {
         self.searchTextField.text = ""
+        self.clearSearchButton.isHidden = true
         self.searchTextField.resignFirstResponder()
+        clearSearchResults()
     }
     
     @IBAction func close() {
         self.dismiss(animated: true, completion: nil)
     }
     
-    func search(keyword:String) {
-        mapLocationController.searchLocationWith(keyword: keyword, region: mapView.region) { (matchingItems) in
-            let names = matchingItems.map({ (mapitem) -> String in
-                return mapitem.name!
-            })
-            
-            print("\(names)")
+    @objc func search(keyword:String) {
+        if keyword.count == 0 {
+            clearSearchResults()
+            return
+        }
+        
+        mapLocationController.searchLocationWith(keyword: keyword, region: mapView.region) {[weak self] (matchingItems) in
+            self?.mapItems = matchingItems
+            self?.updateSearchResultsView()
         }
     }
+    
+    func clearSearchResults() {
+        self.mapItems = []
+        self.updateSearchResultsView()
+        self.adjustTableViewHeight()
+    }
+    
+    func adjustTableViewHeight() {
+        let searchTableViewHeight = CGFloat((self.mapItems?.count)! * 44) > maximumSearchResultsTableViwHeight ? maximumSearchResultsTableViwHeight : CGFloat((self.mapItems?.count)! * 44)
+        self.searchResultsTableViewHeight.constant = searchTableViewHeight
+    }
+    
+    func updateSearchResultsView() {
+        if (self.mapItems?.count)! > 0 {
+            self.searchResultsTableView.isHidden = false
+            searchResultsTableView.reloadData()
+            adjustTableViewHeight()
+        } else {
+            self.searchResultsTableView.isHidden = true
+        }
+    }
+    
     
     func fillViewWithData() {
         self.confirmButton.setTitle(ZADStrings.sharedInstance.confirm, for: .normal)
@@ -87,10 +124,39 @@ class ZADRequestMapLocationVC: UIViewController {
     }
 }
 
+extension ZADRequestMapLocationVC:UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if let items = mapItems {
+            return items.count
+        } else {
+            return 0
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "locationCell", for: indexPath)
+        let mapItem = mapItems![indexPath.row]
+        cell.textLabel?.text = mapItem.placemark.name
+        return cell
+    }
+    
+}
+
+extension ZADRequestMapLocationVC:UITableViewDelegate {
+    
+}
+
 extension ZADRequestMapLocationVC:UITextFieldDelegate {
     func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let text = (textField.text! as NSString).replacingCharacters(in: range, with: string)
-        search(keyword: text)
+        if text.count == 0 {
+            self.clearSearchButton.isHidden = true
+        } else {
+            self.clearSearchButton.isHidden = false
+        }
+        
+        NSObject.cancelPreviousPerformRequests(withTarget: self)
+        self.perform(#selector(search), with: text, afterDelay: 1.0)
         return true
     }
 }
