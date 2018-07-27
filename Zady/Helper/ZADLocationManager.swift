@@ -11,10 +11,10 @@ import CoreLocation
 
 protocol ZADLocationManagerProtocol {
     func didAcquireLocation(acuireLocation:Bool);
+    func didlocationUpdated(location:CLLocation);
 }
 
 class ZADLocationManager: NSObject {
-    static let sharedInstance = ZADLocationManager()
     var delegate:ZADLocationManagerProtocol?
     
     private let locationManager = CLLocationManager()
@@ -22,6 +22,7 @@ class ZADLocationManager: NSObject {
     override init() {
         super.init()
         
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.delegate = self
     }
     
@@ -29,7 +30,11 @@ class ZADLocationManager: NSObject {
         locationManager.requestWhenInUseAuthorization()
     }
     
-    func isLocationAuthorized() -> Bool {
+    func requestLocation () {
+        locationManager.requestLocation()
+    }
+    
+    static func isLocationAuthorized() -> Bool {
         return (CLLocationManager.authorizationStatus() == .authorizedWhenInUse)
     }
 }
@@ -39,5 +44,17 @@ extension ZADLocationManager:CLLocationManagerDelegate {
         if let delegate = self.delegate {
             delegate.didAcquireLocation(acuireLocation: (status == .authorizedWhenInUse))
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first {
+            if let delegate = self.delegate {
+                delegate.didlocationUpdated(location: location)
+            }
+        }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print("error:: (error)")
     }
 }

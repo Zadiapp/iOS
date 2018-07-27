@@ -12,3 +12,5 @@
 "allow" = "السماح";
 "requestNotificationTitle" = "السماح الإخطارات";
 "requestNotificationDescription" = "يساعدنا في إبقائك على اطلاع بالخطوات الجديدة على طلبك ، ولن نسبب إزعاجك";
+"confirm" = "تأكيد";
+"selectYourLocation" = "حدد موقعك";

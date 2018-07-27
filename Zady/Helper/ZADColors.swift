@@ -13,4 +13,6 @@ class ZADColors: NSObject {
     static let descColor:UIColor = UIColor(displayP3Red: 132/255.0 , green: 132/255.0 , blue: 132/255.0 , alpha: 1.0)
     static let buttonBorder:UIColor = UIColor(displayP3Red: 211/255.0 , green: 211/255.0 , blue: 211/255.0 , alpha: 1.0)
     static let buttonOrangeColor:UIColor = UIColor(displayP3Red: 255/255.0 , green: 168/255.0 , blue: 9/255.0 , alpha: 1.0)
+    static let lightGrayColor:UIColor = UIColor(displayP3Red: 254/255.0 , green: 254/255.0 , blue: 254/255.0 , alpha: 1.0)
+    static let textFieldTextColor:UIColor = UIColor(displayP3Red: 132/255.0 , green: 132/255.0 , blue: 132/255.0 , alpha: 1.0)
 }

@@ -7,12 +7,14 @@
 //
 
 import UIKit
+import MapKit
 
 class ZADRequestLocationVC: ZADViewController {
     @IBOutlet weak var requestLocationTitleLabel: UILabel!
     @IBOutlet weak var requestLocationDescLabel: UILabel!
     @IBOutlet weak var requestLocationImageView: UIImageView!
     @IBOutlet weak var requestLocationButton: ZADButton!
+    var locationManager:ZADLocationManager?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,8 +48,11 @@ class ZADRequestLocationVC: ZADViewController {
     }
     
     @IBAction func requestLocation() {
-        ZADLocationManager.sharedInstance.delegate = self
-        ZADLocationManager.sharedInstance.requestAuthorization()
+        locationManager = ZADLocationManager()
+        if let locationManager = locationManager {
+            locationManager.delegate = self
+            locationManager.requestAuthorization()
+        }
     }
     
     @IBAction func showRequestNotifictaionVC() {
@@ -56,6 +61,10 @@ class ZADRequestLocationVC: ZADViewController {
 }
 
 extension ZADRequestLocationVC: ZADLocationManagerProtocol {
+    func didlocationUpdated(location: CLLocation) {
+        
+    }
+    
     func didAcquireLocation(acuireLocation: Bool) {
         showRequestNotifictaionVC()
     }

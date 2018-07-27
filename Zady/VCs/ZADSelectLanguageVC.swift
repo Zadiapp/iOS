@@ -78,7 +78,7 @@ class ZADSelectLanguageVC: ZADViewController {
     }
     
     func showNextView() {
-        if  ZADLocationManager.sharedInstance.isLocationAuthorized() {
+        if  ZADLocationManager.isLocationAuthorized() {
             showRequestNotifictaionVC()
         } else {
             showRequestLocationVC()
