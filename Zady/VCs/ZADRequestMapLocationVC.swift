@@ -9,6 +9,10 @@
 import UIKit
 import MapKit
 
+protocol ZADRequestMapLocationVCDelegate {
+    func didSelectLocation(mapItem:MKMapItem);
+}
+
 class ZADRequestMapLocationVC: UIViewController {
     @IBOutlet weak var closeButton:UIButton!
     @IBOutlet weak var titleLabel:UILabel!
@@ -21,6 +25,7 @@ class ZADRequestMapLocationVC: UIViewController {
     @IBOutlet weak var searchResultsTableViewHeight:NSLayoutConstraint!
     var mapItems:[MKMapItem]?
     let maximumSearchResultsTableViwHeight = CGFloat(44 * 5);
+    var delegate:ZADRequestMapLocationVCDelegate?
     
     var mapLocationController:ZADMapLocationController = ZADMapLocationController()
 
@@ -143,7 +148,14 @@ extension ZADRequestMapLocationVC:UITableViewDataSource {
 }
 
 extension ZADRequestMapLocationVC:UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let selectedMapItem:MKMapItem = self.mapItems![indexPath.row]
+        if let delegate = self.delegate {
+            delegate.didSelectLocation(mapItem: selectedMapItem)
+        }
+        
+        close()
+    }
 }
 
 extension ZADRequestMapLocationVC:UITextFieldDelegate {

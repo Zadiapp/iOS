@@ -1,25 +1,42 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
   - Crashlytics (3.10.5):
     - Fabric (~> 1.7.9)
   - Fabric (1.7.9)
+  - FBSDKCoreKit (4.34.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.34.0):
+    - FBSDKCoreKit
   - SwiftyJSON (4.1.0)
 
 DEPENDENCIES:
   - Crashlytics
   - Fabric
+  - FBSDKLoginKit
   - SwiftyJSON
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Bolts
     - Crashlytics
     - Fabric
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - SwiftyJSON
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
   Crashlytics: 7f2e38d302d9da96475b3d64d86fb29e31a542b7
   Fabric: a2917d3895e4c1569b9c3170de7320ea1b1e6661
+  FBSDKCoreKit: 0ff57f093b85c8c9d5aba697d3edf68a8960ce78
+  FBSDKLoginKit: 8c78f57a145afb756e4755e69195ebe08a42466e
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
 
-PODFILE CHECKSUM: 85f3f543492fd1a08a1890da862f13554dec9715
+PODFILE CHECKSUM: 1bb6eda5cb3266128347cd286668ac729cda08fa
 
 COCOAPODS: 1.5.3

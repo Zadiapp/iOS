@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0432C5DF6C4AD8C25DCF870E /* libPods-Zady.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD5B0678E1D6B05AF367284F /* libPods-Zady.a */; };
-		15436261C72D9ABB91116FA1 /* libPods-ZadyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D212CDFE1B73398596C04D7 /* libPods-ZadyTests.a */; };
-		1ADA2398240C8DE59D2BB640 /* libPods-ZadyUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 649191390A738196ADDD0F1C /* libPods-ZadyUITests.a */; };
+		7100108067A3700280B6F8BE /* Pods_Zady.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84DB04B019DC529CB5C4BD03 /* Pods_Zady.framework */; };
+		9D26A3742FF6508E3538A754 /* Pods_ZadyUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A09CE0D643CDC21D189F5558 /* Pods_ZadyUITests.framework */; };
 		E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1014FA620FAABB7008F0B4C /* Localizable.strings */; };
 		E1246A9E210B4C7A003A9009 /* ZADRequestMapLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1246A9D210B4C7A003A9009 /* ZADRequestMapLocationVC.swift */; };
 		E1246AA1210B8549003A9009 /* ZADMapLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */; };
+		E1246AA4210D258D003A9009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1246AA3210D258C003A9009 /* GoogleService-Info.plist */; };
 		E12A63B221032D79008167E4 /* ZADRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B121032D79008167E4 /* ZADRequest.swift */; };
 		E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B32103357E008167E4 /* ZADEnvironment.swift */; };
 		E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B5210335AC008167E4 /* ZADDispatcher.swift */; };
@@ -30,9 +30,11 @@
 		E19EBF2B20F7D9440031CE01 /* ZadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */; };
 		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
+		E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */; };
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
 		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
 		E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB5210409CF00AEAE68 /* ZADButton.swift */; };
+		E4E60A438FDF017206886236 /* Pods_ZadyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FAF83C1980D4A452F43A2 /* Pods_ZadyTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,14 +58,16 @@
 		07A868920CE3A420B3BBF4D5 /* Pods-Zady.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zady.release.xcconfig"; path = "Pods/Target Support Files/Pods-Zady/Pods-Zady.release.xcconfig"; sourceTree = "<group>"; };
 		25A650B2E357C3870D2C46D2 /* Pods-ZadyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyTests/Pods-ZadyTests.release.xcconfig"; sourceTree = "<group>"; };
 		458BC806E14C62DB8CC5B6F4 /* Pods-ZadyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyTests/Pods-ZadyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5D212CDFE1B73398596C04D7 /* libPods-ZadyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZadyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		649191390A738196ADDD0F1C /* libPods-ZadyUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZadyUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BD5B0678E1D6B05AF367284F /* libPods-Zady.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Zady.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		84DB04B019DC529CB5C4BD03 /* Pods_Zady.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Zady.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A09CE0D643CDC21D189F5558 /* Pods_ZadyUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZadyUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07ABF18B8827876B869F613 /* Pods-ZadyUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD5FAF83C1980D4A452F43A2 /* Pods_ZadyTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZadyTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1014FA520FAABB7008F0B4C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1014FA820FAACB4008F0B4C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		E1246A9D210B4C7A003A9009 /* ZADRequestMapLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequestMapLocationVC.swift; sourceTree = "<group>"; };
 		E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADMapLocationController.swift; sourceTree = "<group>"; };
+		E1246AA2210D2459003A9009 /* Zady.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zady.entitlements; sourceTree = "<group>"; };
+		E1246AA3210D258C003A9009 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E12A63B121032D79008167E4 /* ZADRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequest.swift; sourceTree = "<group>"; };
 		E12A63B32103357E008167E4 /* ZADEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADEnvironment.swift; sourceTree = "<group>"; };
 		E12A63B5210335AC008167E4 /* ZADDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDispatcher.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 		E19EBF2C20F7D9440031CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
+		E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADFBLoginManager.swift; sourceTree = "<group>"; };
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
 		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
 		E1E66EB5210409CF00AEAE68 /* ZADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADButton.swift; sourceTree = "<group>"; };
@@ -99,7 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0432C5DF6C4AD8C25DCF870E /* libPods-Zady.a in Frameworks */,
+				7100108067A3700280B6F8BE /* Pods_Zady.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +112,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15436261C72D9ABB91116FA1 /* libPods-ZadyTests.a in Frameworks */,
+				E4E60A438FDF017206886236 /* Pods_ZadyTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADA2398240C8DE59D2BB640 /* libPods-ZadyUITests.a in Frameworks */,
+				9D26A3742FF6508E3538A754 /* Pods_ZadyUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,9 +130,9 @@
 		BA72C34F24B653E567A37A13 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BD5B0678E1D6B05AF367284F /* libPods-Zady.a */,
-				5D212CDFE1B73398596C04D7 /* libPods-ZadyTests.a */,
-				649191390A738196ADDD0F1C /* libPods-ZadyUITests.a */,
+				84DB04B019DC529CB5C4BD03 /* Pods_Zady.framework */,
+				DD5FAF83C1980D4A452F43A2 /* Pods_ZadyTests.framework */,
+				A09CE0D643CDC21D189F5558 /* Pods_ZadyUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */,
+				E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 		E19EBF0920F7D9420031CE01 /* Zady */ = {
 			isa = PBXGroup;
 			children = (
+				E1246AA2210D2459003A9009 /* Zady.entitlements */,
 				E19EBF0A20F7D9420031CE01 /* AppDelegate.swift */,
 				E1246A9F210B8524003A9009 /* Controller */,
 				E1E66EB4210409B800AEAE68 /* Views */,
@@ -205,6 +212,7 @@
 				E19EBF0E20F7D9420031CE01 /* Main.storyboard */,
 				E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */,
 				E19EBF1620F7D9440031CE01 /* Info.plist */,
+				E1246AA3210D258C003A9009 /* GoogleService-Info.plist */,
 			);
 			path = Zady;
 			sourceTree = "<group>";
@@ -282,6 +290,7 @@
 				E19EBF0420F7D9420031CE01 /* Frameworks */,
 				E19EBF0520F7D9420031CE01 /* Resources */,
 				E1C2EA6F20FBFDE5008CDACA /* ShellScript */,
+				03B477A9B9514368AC9AC4DD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -342,6 +351,11 @@
 				TargetAttributes = {
 					E19EBF0620F7D9420031CE01 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					E19EBF1A20F7D9440031CE01 = {
 						CreatedOnToolsVersion = 9.4;
@@ -381,6 +395,7 @@
 			files = (
 				E19EBF1520F7D9440031CE01 /* LaunchScreen.storyboard in Resources */,
 				E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */,
+				E1246AA4210D258D003A9009 /* GoogleService-Info.plist in Resources */,
 				E19EBF1220F7D9440031CE01 /* Assets.xcassets in Resources */,
 				E19EBF1020F7D9420031CE01 /* Main.storyboard in Resources */,
 			);
@@ -403,6 +418,30 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		03B477A9B9514368AC9AC4DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zady/Pods-Zady-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zady/Pods-Zady-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		71139BF3ED264E7C46A6CCC3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -482,6 +521,7 @@
 				E12A63BA21034CD9008167E4 /* ZADResponse.swift in Sources */,
 				E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */,
 				E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */,
+				E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */,
 				E19EBF0D20F7D9420031CE01 /* ZADSelectLanguageVC.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E150816521042177009CAA77 /* ZADRequestNotificationVC.swift in Sources */,
@@ -678,10 +718,12 @@
 			baseConfigurationReference = F264E7A4B3417879A24FF09D /* Pods-Zady.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = Zady/Zady.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S8BT8ZR3WN;
 				INFOPLIST_FILE = Zady/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -701,9 +743,11 @@
 			baseConfigurationReference = 07A868920CE3A420B3BBF4D5 /* Pods-Zady.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
+				CODE_SIGN_ENTITLEMENTS = Zady/Zady.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = S8BT8ZR3WN;
 				INFOPLIST_FILE = Zady/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (

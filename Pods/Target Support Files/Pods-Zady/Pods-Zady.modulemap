@@ -1,4 +1,4 @@
-module Pods_Zady {
+framework module Pods_Zady {
   umbrella header "Pods-Zady-umbrella.h"
 
   export *

@@ -1,0 +1,6 @@
+framework module Pods_ZadyUITests {
+  umbrella header "Pods-ZadyUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
