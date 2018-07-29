@@ -12,7 +12,6 @@
 		E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = E1014FA620FAABB7008F0B4C /* Localizable.strings */; };
 		E1246A9E210B4C7A003A9009 /* ZADRequestMapLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1246A9D210B4C7A003A9009 /* ZADRequestMapLocationVC.swift */; };
 		E1246AA1210B8549003A9009 /* ZADMapLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */; };
-		E1246AA4210D258D003A9009 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1246AA3210D258C003A9009 /* GoogleService-Info.plist */; };
 		E12A63B221032D79008167E4 /* ZADRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B121032D79008167E4 /* ZADRequest.swift */; };
 		E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B32103357E008167E4 /* ZADEnvironment.swift */; };
 		E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12A63B5210335AC008167E4 /* ZADDispatcher.swift */; };
@@ -34,6 +33,7 @@
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
 		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
 		E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB5210409CF00AEAE68 /* ZADButton.swift */; };
+		E1FE3DE8210D488E00400368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1FE3DE7210D488D00400368 /* GoogleService-Info.plist */; };
 		E4E60A438FDF017206886236 /* Pods_ZadyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FAF83C1980D4A452F43A2 /* Pods_ZadyTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -67,7 +67,6 @@
 		E1246A9D210B4C7A003A9009 /* ZADRequestMapLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequestMapLocationVC.swift; sourceTree = "<group>"; };
 		E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADMapLocationController.swift; sourceTree = "<group>"; };
 		E1246AA2210D2459003A9009 /* Zady.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Zady.entitlements; sourceTree = "<group>"; };
-		E1246AA3210D258C003A9009 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E12A63B121032D79008167E4 /* ZADRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADRequest.swift; sourceTree = "<group>"; };
 		E12A63B32103357E008167E4 /* ZADEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADEnvironment.swift; sourceTree = "<group>"; };
 		E12A63B5210335AC008167E4 /* ZADDispatcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDispatcher.swift; sourceTree = "<group>"; };
@@ -95,6 +94,7 @@
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
 		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
 		E1E66EB5210409CF00AEAE68 /* ZADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADButton.swift; sourceTree = "<group>"; };
+		E1FE3DE7210D488D00400368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF1313E41C39ED18A0394AA6 /* Pods-ZadyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F264E7A4B3417879A24FF09D /* Pods-Zady.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zady.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zady/Pods-Zady.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,7 +212,7 @@
 				E19EBF0E20F7D9420031CE01 /* Main.storyboard */,
 				E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */,
 				E19EBF1620F7D9440031CE01 /* Info.plist */,
-				E1246AA3210D258C003A9009 /* GoogleService-Info.plist */,
+				E1FE3DE7210D488D00400368 /* GoogleService-Info.plist */,
 			);
 			path = Zady;
 			sourceTree = "<group>";
@@ -395,7 +395,7 @@
 			files = (
 				E19EBF1520F7D9440031CE01 /* LaunchScreen.storyboard in Resources */,
 				E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */,
-				E1246AA4210D258D003A9009 /* GoogleService-Info.plist in Resources */,
+				E1FE3DE8210D488E00400368 /* GoogleService-Info.plist in Resources */,
 				E19EBF1220F7D9440031CE01 /* Assets.xcassets in Resources */,
 				E19EBF1020F7D9420031CE01 /* Main.storyboard in Resources */,
 			);
@@ -428,14 +428,20 @@
 				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
 				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

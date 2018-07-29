@@ -8,7 +8,8 @@ pod 'Fabric'
 pod 'Crashlytics'
 pod 'SwiftyJSON'
 pod 'FBSDKLoginKit'
-
+pod 'Firebase/Core'
+pod 'Firebase/Messaging'
   # Pods for Zady
 
   target 'ZadyTests' do

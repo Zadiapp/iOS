@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import UserNotifications
 
 class ZADRequestNotificationVC: ZADViewController {
 
@@ -47,6 +49,12 @@ class ZADRequestNotificationVC: ZADViewController {
     }
     
     @IBAction func requestNotification() {
-
+        let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
+        UNUserNotificationCenter.current().requestAuthorization(
+            options: authOptions,
+            completionHandler: {_, _ in })
+        let application = UIApplication.shared
+        application.registerForRemoteNotifications()
     }
 }
+
