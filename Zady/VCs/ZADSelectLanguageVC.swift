@@ -17,11 +17,11 @@ class ZADSelectLanguageVC: ZADViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillViewWithData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fillViewWithData()
         applyTheme()
     }
     
@@ -73,7 +73,7 @@ class ZADSelectLanguageVC: ZADViewController {
     }
     
     func changeLanguge(languge:Langugage) {
-        ZADStrings.sharedInstance.changeLangugage(lang: languge)
+        ZADDefaults.sharedInstance.applicationLanguage = languge
         showNextView()
     }
     

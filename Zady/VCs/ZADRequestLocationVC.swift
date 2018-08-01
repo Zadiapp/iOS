@@ -18,11 +18,11 @@ class ZADRequestLocationVC: ZADViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillViewWithData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fillViewWithData()
         applyTheme()
     }
     
@@ -49,14 +49,46 @@ class ZADRequestLocationVC: ZADViewController {
     
     @IBAction func requestLocation() {
         locationManager = ZADLocationManager()
-        if let locationManager = locationManager {
-            locationManager.delegate = self
-            locationManager.requestAuthorization()
+        if ZADLocationManager.isLocationCancled() {
+            showMapView()
+        } else {
+            if let locationManager = locationManager {
+                locationManager.delegate = self
+                locationManager.requestAuthorization()
+            }
         }
     }
     
     @IBAction func showRequestNotifictaionVC() {
         self.performSegue(withIdentifier: "showNotification", sender: nil)
+    }
+    
+    func showMapView() {
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let mapLocation = storyBoard.instantiateViewController(withIdentifier: "RequestMapLocation") as! ZADRequestMapLocationVC
+        mapLocation.delegate = self
+        self.present(mapLocation, animated: true, completion: nil)
+    }
+    
+    func isNotificationDenied() -> Bool {
+        return UIApplication.shared.isRegisteredForRemoteNotifications
+    }
+    
+    func showHome() {
+        ZADDefaults.sharedInstance.isRegistedRequiredData = true
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
+        UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+    }
+}
+
+extension ZADRequestLocationVC : ZADRequestMapLocationVCDelegate {
+    func didSelectLocation(mapItem:MKMapItem) {
+        ZADDefaults.sharedInstance.userLocation = mapItem.placemark.coordinate
+        
+        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
+            self.showRequestNotifictaionVC()
+        }
     }
 }
 
@@ -66,6 +98,14 @@ extension ZADRequestLocationVC: ZADLocationManagerProtocol {
     }
     
     func didAcquireLocation(acuireLocation: Bool) {
-        showRequestNotifictaionVC()
+        if acuireLocation {
+            if !isNotificationDenied() {
+                showRequestNotifictaionVC()
+            } else {
+                showHome()
+            }
+        } else {
+            showMapView()
+        }
     }
 }

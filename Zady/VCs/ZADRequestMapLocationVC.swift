@@ -31,12 +31,12 @@ class ZADRequestMapLocationVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillViewWithData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         applyTheme()
+        fillViewWithData()
         setupMapView()
         setupView()
     }

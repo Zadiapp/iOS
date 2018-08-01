@@ -19,11 +19,11 @@ class ZADRequestNotificationVC: ZADViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fillViewWithData()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fillViewWithData()
         applyTheme()
     }
     
@@ -48,11 +48,20 @@ class ZADRequestNotificationVC: ZADViewController {
         fillViewWithData()
     }
     
+    func showHome() {
+        ZADDefaults.sharedInstance.isRegistedRequiredData = true
+        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+        let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
+        UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+    }
+    
     @IBAction func requestNotification() {
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(
             options: authOptions,
-            completionHandler: {_, _ in })
+            completionHandler: {_, _ in
+                self.showHome()
+        })
         let application = UIApplication.shared
         application.registerForRemoteNotifications()
     }

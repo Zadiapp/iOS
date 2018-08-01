@@ -11,6 +11,7 @@ import UIKit
 public enum Langugage:String {
     case arabic = "ar"
     case english = "en"
+    case notSet = "NA"
 }
 
 protocol ZADStringsProtocol {

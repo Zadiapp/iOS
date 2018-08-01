@@ -37,12 +37,18 @@ class ZADLocationManager: NSObject {
     static func isLocationAuthorized() -> Bool {
         return (CLLocationManager.authorizationStatus() == .authorizedWhenInUse)
     }
+    
+    static func isLocationCancled() -> Bool {
+        return (CLLocationManager.authorizationStatus() == .denied)
+    }
 }
 
 extension ZADLocationManager:CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
         if let delegate = self.delegate {
-            delegate.didAcquireLocation(acuireLocation: (status == .authorizedWhenInUse))
+            if status != .notDetermined {
+                delegate.didAcquireLocation(acuireLocation: (status == .authorizedWhenInUse))
+            }
         }
     }
     

@@ -29,6 +29,8 @@
 		E19EBF2B20F7D9440031CE01 /* ZadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */; };
 		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
+		E1DC267F21112B4B00C96A88 /* ZADDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */; };
+		E1DC268121114B0600C96A88 /* ZADMarketsNearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC268021114B0600C96A88 /* ZADMarketsNearBy.swift */; };
 		E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */; };
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
 		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
@@ -90,6 +92,8 @@
 		E19EBF2C20F7D9440031CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
+		E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDefaults.swift; sourceTree = "<group>"; };
+		E1DC268021114B0600C96A88 /* ZADMarketsNearBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADMarketsNearBy.swift; sourceTree = "<group>"; };
 		E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADFBLoginManager.swift; sourceTree = "<group>"; };
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
 		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
@@ -159,6 +163,7 @@
 			children = (
 				E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */,
 				E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */,
+				E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -253,6 +258,7 @@
 				E150816221041D65009CAA77 /* ZADRequestLocationVC.swift */,
 				E150816421042177009CAA77 /* ZADRequestNotificationVC.swift */,
 				E1246A9D210B4C7A003A9009 /* ZADRequestMapLocationVC.swift */,
+				E1DC268021114B0600C96A88 /* ZADMarketsNearBy.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -522,12 +528,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E1DC268121114B0600C96A88 /* ZADMarketsNearBy.swift in Sources */,
 				E1246A9E210B4C7A003A9009 /* ZADRequestMapLocationVC.swift in Sources */,
 				E12A63B221032D79008167E4 /* ZADRequest.swift in Sources */,
 				E12A63BA21034CD9008167E4 /* ZADResponse.swift in Sources */,
 				E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */,
 				E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */,
 				E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */,
+				E1DC267F21112B4B00C96A88 /* ZADDefaults.swift in Sources */,
 				E19EBF0D20F7D9420031CE01 /* ZADSelectLanguageVC.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E150816521042177009CAA77 /* ZADRequestNotificationVC.swift in Sources */,
