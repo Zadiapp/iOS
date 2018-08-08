@@ -49,10 +49,12 @@ class ZADRequestNotificationVC: ZADViewController {
     }
     
     func showHome() {
-        ZADDefaults.sharedInstance.isRegistedRequiredData = true
-        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
-        UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+        DispatchQueue.main.async {
+            ZADDefaults.sharedInstance.isRegistedRequiredData = true
+            let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
+            let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
+            UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+        }
     }
     
     @IBAction func requestNotification() {

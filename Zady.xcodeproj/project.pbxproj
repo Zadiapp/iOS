@@ -35,6 +35,11 @@
 		E1E66EB12103FCF000AEAE68 /* ZADViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */; };
 		E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB2210404C000AEAE68 /* ZADColors.swift */; };
 		E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E66EB5210409CF00AEAE68 /* ZADButton.swift */; };
+		E1EBC5EF211A5E70008A9E7C /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1EBC5ED211A5E70008A9E7C /* MarketTableViewCell.swift */; };
+		E1EBC5F0211A5E70008A9E7C /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1EBC5EE211A5E70008A9E7C /* MarketTableViewCell.xib */; };
+		E1EBC5F3211A808E008A9E7C /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E1EBC5F1211A808D008A9E7C /* logo.jpeg */; };
+		E1EBC5F4211A808E008A9E7C /* cover.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = E1EBC5F2211A808D008A9E7C /* cover.jpeg */; };
+		E1EBC5F6211A816B008A9E7C /* profile.jpg in Resources */ = {isa = PBXBuildFile; fileRef = E1EBC5F5211A816B008A9E7C /* profile.jpg */; };
 		E1FE3DE8210D488E00400368 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E1FE3DE7210D488D00400368 /* GoogleService-Info.plist */; };
 		E4E60A438FDF017206886236 /* Pods_ZadyTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD5FAF83C1980D4A452F43A2 /* Pods_ZadyTests.framework */; };
 /* End PBXBuildFile section */
@@ -98,6 +103,11 @@
 		E1E66EB02103FCF000AEAE68 /* ZADViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewController.swift; sourceTree = "<group>"; };
 		E1E66EB2210404C000AEAE68 /* ZADColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADColors.swift; sourceTree = "<group>"; };
 		E1E66EB5210409CF00AEAE68 /* ZADButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADButton.swift; sourceTree = "<group>"; };
+		E1EBC5ED211A5E70008A9E7C /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		E1EBC5EE211A5E70008A9E7C /* MarketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
+		E1EBC5F1211A808D008A9E7C /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpeg; sourceTree = "<group>"; };
+		E1EBC5F2211A808D008A9E7C /* cover.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cover.jpeg; sourceTree = "<group>"; };
+		E1EBC5F5211A816B008A9E7C /* profile.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = profile.jpg; sourceTree = "<group>"; };
 		E1FE3DE7210D488D00400368 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		EF1313E41C39ED18A0394AA6 /* Pods-ZadyUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZadyUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZadyUITests/Pods-ZadyUITests.release.xcconfig"; sourceTree = "<group>"; };
 		F264E7A4B3417879A24FF09D /* Pods-Zady.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Zady.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Zady/Pods-Zady.debug.xcconfig"; sourceTree = "<group>"; };
@@ -152,6 +162,9 @@
 		E1014FA920FAACCB008F0B4C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				E1EBC5F2211A808D008A9E7C /* cover.jpeg */,
+				E1EBC5F1211A808D008A9E7C /* logo.jpeg */,
+				E1EBC5F5211A816B008A9E7C /* profile.jpg */,
 				E19EBF1120F7D9440031CE01 /* Assets.xcassets */,
 				E1014FA120FAAB86008F0B4C /* Localization */,
 			);
@@ -267,6 +280,8 @@
 			isa = PBXGroup;
 			children = (
 				E1E66EB5210409CF00AEAE68 /* ZADButton.swift */,
+				E1EBC5ED211A5E70008A9E7C /* MarketTableViewCell.swift */,
+				E1EBC5EE211A5E70008A9E7C /* MarketTableViewCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -400,8 +415,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				E19EBF1520F7D9440031CE01 /* LaunchScreen.storyboard in Resources */,
+				E1EBC5F3211A808E008A9E7C /* logo.jpeg in Resources */,
 				E1014FA420FAABB7008F0B4C /* Localizable.strings in Resources */,
 				E1FE3DE8210D488E00400368 /* GoogleService-Info.plist in Resources */,
+				E1EBC5F6211A816B008A9E7C /* profile.jpg in Resources */,
+				E1EBC5F0211A5E70008A9E7C /* MarketTableViewCell.xib in Resources */,
+				E1EBC5F4211A808E008A9E7C /* cover.jpeg in Resources */,
 				E19EBF1220F7D9440031CE01 /* Assets.xcassets in Resources */,
 				E19EBF1020F7D9420031CE01 /* Main.storyboard in Resources */,
 			);
@@ -536,6 +555,7 @@
 				E12A63B42103357E008167E4 /* ZADEnvironment.swift in Sources */,
 				E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */,
 				E1DC267F21112B4B00C96A88 /* ZADDefaults.swift in Sources */,
+				E1EBC5EF211A5E70008A9E7C /* MarketTableViewCell.swift in Sources */,
 				E19EBF0D20F7D9420031CE01 /* ZADSelectLanguageVC.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E150816521042177009CAA77 /* ZADRequestNotificationVC.swift in Sources */,

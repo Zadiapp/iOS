@@ -32,6 +32,9 @@ class ZADStrings: NSObject {
     var requestNotificationDescription:String  {get {return localizedStringWithKey(key: "requestNotificationDescription")}}
     var confirm:String  {get {return localizedStringWithKey(key: "confirm")}}
     var selectYourLocation:String  {get {return localizedStringWithKey(key: "selectYourLocation")}}
+    var chooseMarket:String  {get {return localizedStringWithKey(key: "chooseMarket")}}
+    var market:String  {get {return localizedStringWithKey(key: "market")}}
+    var markets:String  {get {return localizedStringWithKey(key: "markets")}}
 
     func registerLangugaeUpdate(name:String?, viewController:ZADStringsProtocol) {
         if let name = name {

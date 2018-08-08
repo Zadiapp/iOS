@@ -415,24 +415,59 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Markets Near by" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFc-he-kDn">
-                                <rect key="frame" x="124.66666666666669" y="395.66666666666669" width="126" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NiG-ru-nh6">
+                                <rect key="frame" x="0.0" y="114" width="375" height="664"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hz3-0t-Aaq" id="xdp-Dt-PGj"/>
+                                    <outlet property="delegate" destination="hz3-0t-Aaq" id="Vb1-On-CqW"/>
+                                </connections>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose market" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5h1-O3-hcX">
+                                <rect key="frame" x="129.33333333333334" y="54" width="116.33333333333334" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 markets" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6YI-tT-lFt">
+                                <rect key="frame" x="149.33333333333334" y="83" width="76.333333333333343" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="YqQ-WM-OlI">
+                                <rect key="frame" x="318" y="54" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="Gua-pf-BfI"/>
+                                    <constraint firstAttribute="width" constant="32" id="cPH-Rv-WiC"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="QFc-he-kDn" firstAttribute="centerX" secondItem="aUX-4F-dtv" secondAttribute="centerX" id="A2f-h7-FyO"/>
-                            <constraint firstItem="QFc-he-kDn" firstAttribute="centerY" secondItem="aUX-4F-dtv" secondAttribute="centerY" id="AY0-bo-ex8"/>
+                            <constraint firstItem="8F5-Kx-VKS" firstAttribute="trailing" secondItem="NiG-ru-nh6" secondAttribute="trailing" id="DL8-Xx-DJv"/>
+                            <constraint firstItem="NiG-ru-nh6" firstAttribute="top" secondItem="6YI-tT-lFt" secondAttribute="bottom" constant="10" id="MQN-7m-x0j"/>
+                            <constraint firstItem="8F5-Kx-VKS" firstAttribute="trailing" secondItem="YqQ-WM-OlI" secondAttribute="trailing" constant="25" id="VYz-SQ-fl1"/>
+                            <constraint firstItem="5h1-O3-hcX" firstAttribute="centerX" secondItem="aUX-4F-dtv" secondAttribute="centerX" id="Vsx-CQ-fsK"/>
+                            <constraint firstItem="6YI-tT-lFt" firstAttribute="centerX" secondItem="aUX-4F-dtv" secondAttribute="centerX" id="Ybj-KQ-ZMG"/>
+                            <constraint firstItem="6YI-tT-lFt" firstAttribute="top" secondItem="5h1-O3-hcX" secondAttribute="bottom" constant="8" id="bZY-Bq-6nY"/>
+                            <constraint firstItem="YqQ-WM-OlI" firstAttribute="top" secondItem="5h1-O3-hcX" secondAttribute="top" id="eyb-44-TaB"/>
+                            <constraint firstItem="NiG-ru-nh6" firstAttribute="leading" secondItem="8F5-Kx-VKS" secondAttribute="leading" id="ftp-9i-h2z"/>
+                            <constraint firstItem="YqQ-WM-OlI" firstAttribute="top" secondItem="8F5-Kx-VKS" secondAttribute="top" constant="10" id="gYX-4m-fJA"/>
+                            <constraint firstItem="8F5-Kx-VKS" firstAttribute="bottom" secondItem="NiG-ru-nh6" secondAttribute="bottom" id="gff-RU-xFj"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8F5-Kx-VKS"/>
                     </view>
+                    <connections>
+                        <outlet property="chooseMarketLabel" destination="5h1-O3-hcX" id="90c-PS-chh"/>
+                        <outlet property="marketsCountLabel" destination="6YI-tT-lFt" id="BxF-Dc-xPN"/>
+                        <outlet property="nearByMarketsTableView" destination="NiG-ru-nh6" id="TkJ-Te-du7"/>
+                        <outlet property="profileImageView" destination="YqQ-WM-OlI" id="dLM-Nf-5RA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cDQ-Lj-qDJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2554" y="21"/>
+            <point key="canvasLocation" x="2552.8000000000002" y="20.689655172413794"/>
         </scene>
     </scenes>
     <resources>
@@ -444,6 +479,7 @@
         <image name="ic_step_lang" width="263" height="200"/>
         <image name="ic_step_location" width="206" height="267"/>
         <image name="ic_step_notify" width="309" height="292"/>
+        <image name="profile.jpg" width="400" height="400"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="C6Z-CY-8il"/>
