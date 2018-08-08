@@ -64,18 +64,13 @@ class ZADDefaults: NSObject {
     
     var isRegistedRequiredData:Bool {
         set {
-            let registerRequired = NSNumber(value: newValue)
-            UserDefaults.standard.set(registerRequired, forKey: "IS_REGISTERD_REQUIRED_DATA")
+            UserDefaults.standard.set(newValue, forKey: "IS_REGISTERD_REQUIRED_DATA")
             UserDefaults.standard.synchronize()
         }
         
         get {
-            let userDefaultValue = UserDefaults.standard.value(forKey: "IS_REGISTERD_REQUIRED_DATA")
-            if let registerRequired = userDefaultValue as? NSNumber {
-                return registerRequired.boolValue
-            }
-            
-            return false
+            let userDefaultValue = UserDefaults.standard.bool(forKey: "IS_REGISTERD_REQUIRED_DATA")
+            return userDefaultValue
         }
     }
 }

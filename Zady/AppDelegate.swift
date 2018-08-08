@@ -37,7 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func showHome() {
         let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
         let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
-        UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+        self.window?.rootViewController = marketsNearBy
+        self.window?.makeKeyAndVisible()
     }
     
     func applicationWillResignActive(_ application: UIApplication) {
