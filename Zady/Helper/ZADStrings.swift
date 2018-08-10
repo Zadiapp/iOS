@@ -20,9 +20,25 @@ protocol ZADStringsProtocol {
 
 class ZADStrings: NSObject {
     static let sharedInstance = ZADStrings()
-    private var currentLangugae:Langugage = .english
-    var viewControllers:[String:ZADStringsProtocol] = [:]
+    private var _currentLangugae:Langugage = .notSet
+    private var currentLangugae:Langugage {
+        set {
+            _currentLangugae = newValue
+        }
+        get {
+            if _currentLangugae == .notSet {
+                if let deviceLang = NSLocale.preferredLanguages.first {
+                    return deviceLang.contains("ar") ? .arabic  : .english
+                } else {
+                    return .english
+                }
+            } else {
+                return _currentLangugae
+            }
+        }
+    }
     
+    var viewControllers:[String:ZADStringsProtocol] = [:]
     var selectLanguageTitle:String  {get {return localizedStringWithKey(key: "selectLangugageTitle")}}
     var selectLanguageDescription:String  {get {return localizedStringWithKey(key: "selectLanguageDescription")}}
     var requestLocationTitle:String  {get {return localizedStringWithKey(key: "requestLocationTitle")}}

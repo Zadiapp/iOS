@@ -53,6 +53,7 @@ class ZADSelectLanguageVC: ZADViewController {
         let arabicAvailableWidth = arabicAvailableSpace.width - self.arabicButton.imageEdgeInsets.left - (self.arabicButton.imageView?.frame.width ?? 0) - (self.arabicButton.titleLabel?.frame.width ?? 0)
         self.arabicButton.titleEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: (arabicAvailableWidth / 2))
         
+        self.englishButton.semanticContentAttribute = .forceLeftToRight
         self.englishButton.contentHorizontalAlignment = .left
         self.englishButton.contentEdgeInsets = UIEdgeInsetsMake(0.0, 7.0, 0.0, 0.0)
         let englishAvailableSpace = UIEdgeInsetsInsetRect(self.englishButton.bounds, self.englishButton.contentEdgeInsets)
