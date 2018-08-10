@@ -48,12 +48,10 @@ class ZADRequestNotificationVC: ZADViewController {
         fillViewWithData()
     }
     
-    func showHome() {
+    func showNextView() {
         DispatchQueue.main.async {
-            ZADDefaults.sharedInstance.isRegistedRequiredData = true
-            let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-            let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
-            UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+            let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
+            launcher.showNextViewController(fromViewController: self)
         }
     }
     
@@ -61,11 +59,17 @@ class ZADRequestNotificationVC: ZADViewController {
         let authOptions: UNAuthorizationOptions = [.alert, .badge, .sound]
         UNUserNotificationCenter.current().requestAuthorization(
             options: authOptions,
-            completionHandler: {_, _ in
-                self.showHome()
+            completionHandler: {granted, _ in
+                if !granted {
+                    ZADDefaults.sharedInstance.isNotificationDenied = true
+                } else {
+                    DispatchQueue.main.async {
+                        let application = UIApplication.shared
+                        application.registerForRemoteNotifications()
+                        self.showNextView()
+                    }
+                }
         })
-        let application = UIApplication.shared
-        application.registerForRemoteNotifications()
     }
 }
 

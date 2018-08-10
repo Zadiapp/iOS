@@ -29,6 +29,7 @@
 		E19EBF2B20F7D9440031CE01 /* ZadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */; };
 		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
+		E1C9CC9F211DCE92005677C2 /* ZADViewControllerLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9CC9E211DCE92005677C2 /* ZADViewControllerLauncher.swift */; };
 		E1DC267F21112B4B00C96A88 /* ZADDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */; };
 		E1DC268121114B0600C96A88 /* ZADMarketsNearBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1DC268021114B0600C96A88 /* ZADMarketsNearBy.swift */; };
 		E1E0A3B9210D31C1004978A7 /* ZADFBLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */; };
@@ -97,6 +98,7 @@
 		E19EBF2C20F7D9440031CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
+		E1C9CC9E211DCE92005677C2 /* ZADViewControllerLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewControllerLauncher.swift; sourceTree = "<group>"; };
 		E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADDefaults.swift; sourceTree = "<group>"; };
 		E1DC268021114B0600C96A88 /* ZADMarketsNearBy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADMarketsNearBy.swift; sourceTree = "<group>"; };
 		E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADFBLoginManager.swift; sourceTree = "<group>"; };
@@ -177,6 +179,7 @@
 				E1246AA0210B8549003A9009 /* ZADMapLocationController.swift */,
 				E1E0A3B8210D31C1004978A7 /* ZADFBLoginManager.swift */,
 				E1DC267E21112B4B00C96A88 /* ZADDefaults.swift */,
+				E1C9CC9E211DCE92005677C2 /* ZADViewControllerLauncher.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -559,6 +562,7 @@
 				E19EBF0D20F7D9420031CE01 /* ZADSelectLanguageVC.swift in Sources */,
 				E19EBF0B20F7D9420031CE01 /* AppDelegate.swift in Sources */,
 				E150816521042177009CAA77 /* ZADRequestNotificationVC.swift in Sources */,
+				E1C9CC9F211DCE92005677C2 /* ZADViewControllerLauncher.swift in Sources */,
 				E12A63BC21035E82008167E4 /* ZADOperation.swift in Sources */,
 				E1E66EB3210404C000AEAE68 /* ZADColors.swift in Sources */,
 				E1246AA1210B8549003A9009 /* ZADMapLocationController.swift in Sources */,

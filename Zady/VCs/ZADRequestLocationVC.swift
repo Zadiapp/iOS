@@ -74,38 +74,32 @@ class ZADRequestLocationVC: ZADViewController {
         return UIApplication.shared.isRegisteredForRemoteNotifications
     }
     
-    func showHome() {
-        ZADDefaults.sharedInstance.isRegistedRequiredData = true
-        let storyBoard = UIStoryboard(name: "Main", bundle: Bundle.main)
-        let marketsNearBy = storyBoard.instantiateViewController(withIdentifier: "MarketsNearBy") as! ZADMarketsNearBy
-        UIApplication.shared.keyWindow?.rootViewController = marketsNearBy
+    func showNextViewController() {
+        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
+            let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
+            launcher.showNextViewController(fromViewController: self)
+        }
     }
 }
 
 extension ZADRequestLocationVC : ZADRequestMapLocationVCDelegate {
     func didSelectLocation(mapItem:MKMapItem) {
         ZADDefaults.sharedInstance.userLocation = mapItem.placemark.coordinate
-        
-        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
-            self.showRequestNotifictaionVC()
-        }
+        showNextViewController()
     }
 }
 
 extension ZADRequestLocationVC: ZADLocationManagerProtocol {
     func didlocationUpdated(location: CLLocation) {
-        
+        ZADDefaults.sharedInstance.userLocation = location.coordinate
+        showNextViewController()
     }
     
     func didAcquireLocation(acuireLocation: Bool) {
-        if acuireLocation {
-            if !isNotificationDenied() {
-                showRequestNotifictaionVC()
-            } else {
-                showHome()
-            }
-        } else {
+        if !acuireLocation {
             showMapView()
+        } else {
+            locationManager?.requestLocation()
         }
     }
 }

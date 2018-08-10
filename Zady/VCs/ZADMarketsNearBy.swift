@@ -17,6 +17,8 @@ class ZADMarketsNearBy: ZADViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         nearByMarketsTableView.register(UINib(nibName: "MarketTableViewCell", bundle: nil), forCellReuseIdentifier: "MarketTableViewCell")
+        // TODO: move it to controller
+        ZADDefaults.sharedInstance.isRegistedRequiredData = true
     }
     
     override func viewWillAppear(_ animated: Bool) {

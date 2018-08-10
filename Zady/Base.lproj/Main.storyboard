@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -13,7 +13,7 @@
         <!--Select LanguageVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ZADSelectLanguageVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="selectLanguage" id="BYZ-38-t0r" customClass="ZADSelectLanguageVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -86,8 +86,6 @@
                         <outlet property="englishButton" destination="ong-JB-Hpv" id="yQl-aE-6sc"/>
                         <outlet property="selectLanguageDescLabel" destination="la6-yb-C4u" id="kvk-uq-orm"/>
                         <outlet property="selectLanguageTitleLabel" destination="qB7-G1-XUg" id="hcO-aQ-Xfe"/>
-                        <segue destination="Ru3-Mx-b1N" kind="presentation" identifier="showLocation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="vck-BS-83F"/>
-                        <segue destination="Gxn-5C-OLv" kind="presentation" identifier="showNotification" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="C6Z-CY-8il"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,7 +95,7 @@
         <!--Request LocationVC-->
         <scene sceneID="HSF-46-JOf">
             <objects>
-                <viewController id="Ru3-Mx-b1N" customClass="ZADRequestLocationVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="requestLocation" id="Ru3-Mx-b1N" customClass="ZADRequestLocationVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="FNF-Ud-bVt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -155,7 +153,6 @@
                         <outlet property="requestLocationDescLabel" destination="sYG-my-gzg" id="Zgz-la-OMt"/>
                         <outlet property="requestLocationImageView" destination="0nO-It-5kn" id="rVg-zB-SAH"/>
                         <outlet property="requestLocationTitleLabel" destination="dxH-QB-gpY" id="oju-zw-bKu"/>
-                        <segue destination="Gxn-5C-OLv" kind="presentation" identifier="showNotification" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="uE9-Bi-5q1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BTz-5G-lxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -165,7 +162,7 @@
         <!--Request NotificationVC-->
         <scene sceneID="N8h-ow-9HW">
             <objects>
-                <viewController id="Gxn-5C-OLv" customClass="ZADRequestNotificationVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="requestNotification" id="Gxn-5C-OLv" customClass="ZADRequestNotificationVC" customModule="Zady" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2mF-eu-Rly">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -481,7 +478,4 @@
         <image name="ic_step_notify" width="309" height="292"/>
         <image name="profile.jpg" width="400" height="400"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="C6Z-CY-8il"/>
-    </inferredMetricsTieBreakers>
 </document>

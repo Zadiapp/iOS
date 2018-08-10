@@ -58,7 +58,7 @@ class ZADDefaults: NSObject {
                 }
             }
 
-            return self.userLocation
+            return nil
         }
     }
     
@@ -71,6 +71,30 @@ class ZADDefaults: NSObject {
         get {
             let userDefaultValue = UserDefaults.standard.bool(forKey: "IS_REGISTERD_REQUIRED_DATA")
             return userDefaultValue
+        }
+    }
+    
+    var isNotificationDenied:Bool {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "IS_NOTIFICATION_DENIED")
+            UserDefaults.standard.synchronize()
+        }
+        
+        get {
+            let userDefaultValue = UserDefaults.standard.bool(forKey: "IS_NOTIFICATION_DENIED")
+            return userDefaultValue
+        }
+    }
+    
+    var isNotificationGranted:Bool {
+        get {
+            #if (arch(i386) || arch(x86_64))
+            let isRegisteredForLocalNotifications = UIApplication.shared.currentUserNotificationSettings?.types.contains(UIUserNotificationType.alert) ?? false
+            return isRegisteredForLocalNotifications
+            #endif
+
+            
+            return UIApplication.shared.isRegisteredForRemoteNotifications
         }
     }
 }

@@ -78,22 +78,9 @@ class ZADSelectLanguageVC: ZADViewController {
     }
     
     func showNextView() {
-        if  ZADLocationManager.isLocationAuthorized() {
-            showRequestNotifictaionVC()
-        } else {
-            showRequestLocationVC()
-        }
-    }
-    
-    func showRequestLocationVC() {
         DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
-            self.performSegue(withIdentifier: "showLocation", sender: nil)
-        }
-    }
-    
-    func showRequestNotifictaionVC() {
-        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
-            self.performSegue(withIdentifier: "showNotification", sender: nil)
+            let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
+            launcher.showNextViewController(fromViewController: self)
         }
     }
     
