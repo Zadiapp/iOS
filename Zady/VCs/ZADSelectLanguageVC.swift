@@ -40,8 +40,8 @@ class ZADSelectLanguageVC: ZADViewController {
         let englishImage = UIImage(named: "ic_lang_en")
         self.arabicButton.imageView?.image = arabicImage
         self.englishButton.imageView?.image = englishImage
-        self.arabicButton.titleLabel?.text = "العربية"
-        self.englishButton.titleLabel?.text = "English"
+        self.arabicButton.setTitle("العربية", for: .normal)
+        self.englishButton.setTitle("English", for: .normal)
 
         self.selectLanguageDescLabel.font = UIFont.systemFont(ofSize: 19.2)
         self.selectLanguageTitleLabel.font = UIFont.systemFont(ofSize: 27.2)
