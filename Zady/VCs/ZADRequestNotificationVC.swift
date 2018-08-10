@@ -40,7 +40,7 @@ class ZADRequestNotificationVC: ZADViewController {
         self.requestNotificationDescLabel.font = UIFont.systemFont(ofSize: 19.6, weight: .regular)
         self.requestNotificationTitleLabel.font = UIFont.systemFont(ofSize: 21.2, weight: .bold)
         
-        self.requestNotificationButton.backgroundColor = ZADColors.buttonOrangeColor
+        self.requestNotificationButton.backgroundColor = ZADColors.buttonGreenColor
         self.requestNotificationButton.setTitleColor(UIColor.white, for: .normal)
     }
     

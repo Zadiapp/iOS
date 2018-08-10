@@ -116,7 +116,7 @@ class ZADRequestMapLocationVC: UIViewController {
         self.searchTextField.textColor = ZADColors.textFieldTextColor
         self.searchTextField.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         
-        self.confirmButton.backgroundColor = ZADColors.buttonOrangeColor
+        self.confirmButton.backgroundColor = ZADColors.buttonGreenColor
         self.confirmButton.setTitleColor(UIColor.white, for: .normal)
         
         self.searchView.layer.cornerRadius = 10.0
