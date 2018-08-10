@@ -36,8 +36,8 @@ class ZADRequestLocationVC: ZADViewController {
         self.requestLocationTitleLabel.textColor = ZADColors.titleColor
         self.requestLocationDescLabel.textColor = ZADColors.descColor
         
-        self.requestLocationDescLabel.font = UIFont.systemFont(ofSize: 19.2)
-        self.requestLocationTitleLabel.font = UIFont.systemFont(ofSize: 27.2)
+        self.requestLocationDescLabel.font = UIFont.systemFont(ofSize: 19.6, weight: .regular)
+        self.requestLocationTitleLabel.font = UIFont.systemFont(ofSize: 21.0, weight: .bold)
         
         self.requestLocationButton.backgroundColor = ZADColors.buttonOrangeColor
         self.requestLocationButton.setTitleColor(UIColor.white, for: .normal)

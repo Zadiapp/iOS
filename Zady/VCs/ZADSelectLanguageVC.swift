@@ -43,8 +43,9 @@ class ZADSelectLanguageVC: ZADViewController {
         self.arabicButton.setTitle("العربية", for: .normal)
         self.englishButton.setTitle("English", for: .normal)
 
-        self.selectLanguageDescLabel.font = UIFont.systemFont(ofSize: 19.2)
-        self.selectLanguageTitleLabel.font = UIFont.systemFont(ofSize: 27.2)
+        
+        self.selectLanguageDescLabel.font = UIFont.systemFont(ofSize: 19.6, weight: .regular)
+        self.selectLanguageTitleLabel.font = UIFont.systemFont(ofSize: 21.0, weight: .bold)
         
         self.arabicButton.semanticContentAttribute = .forceRightToLeft
         self.arabicButton.contentHorizontalAlignment = .right

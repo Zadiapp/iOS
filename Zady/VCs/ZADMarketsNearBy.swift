@@ -35,8 +35,8 @@ class ZADMarketsNearBy: ZADViewController {
     func applyTheme() {
         self.chooseMarketLabel.textColor = ZADColors.titleColor
         self.marketsCountLabel.textColor = ZADColors.descColor
-        self.chooseMarketLabel.font = UIFont.systemFont(ofSize: 27.2)
-        self.marketsCountLabel.font = UIFont.systemFont(ofSize: 15.0)
+        self.chooseMarketLabel.font = UIFont.systemFont(ofSize: 21.0, weight: .bold)
+        self.marketsCountLabel.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         
         self.profileImageView.layer.cornerRadius = self.profileImageView.frame.size.width/2.0
         self.profileImageView.layer.masksToBounds = true

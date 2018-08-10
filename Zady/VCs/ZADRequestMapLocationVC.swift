@@ -112,9 +112,9 @@ class ZADRequestMapLocationVC: UIViewController {
     
     func applyTheme() {
         self.titleLabel.textColor = ZADColors.titleColor
-        self.titleLabel.font = UIFont.systemFont(ofSize: 27.2)
+        self.titleLabel.font = UIFont.systemFont(ofSize: 21.0, weight: .regular)
         self.searchTextField.textColor = ZADColors.textFieldTextColor
-        self.searchTextField.font = UIFont.systemFont(ofSize: 15.0)
+        self.searchTextField.font = UIFont.systemFont(ofSize: 15.0, weight: .regular)
         
         self.confirmButton.backgroundColor = ZADColors.buttonOrangeColor
         self.confirmButton.setTitleColor(UIColor.white, for: .normal)
