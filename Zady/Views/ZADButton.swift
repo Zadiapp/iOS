@@ -13,7 +13,7 @@ class ZADButton: UIButton {
         super.init(coder: aDecoder)
         self.layer.cornerRadius = 30.0
         self.layer.masksToBounds = true
-        self.titleLabel?.font = UIFont.systemFont(ofSize: 19.2)
+        self.titleLabel?.font = UIFont.systemFont(ofSize: 21.2, weight: .bold)
     }
     
     var applyShadow:Bool {set {newValue ? addShadow() : removeShadow() } get {return self.applyShadow}}
