@@ -10,7 +10,7 @@ import UIKit
 
 class ZADNetwork: NSObject {
     static func getDispatcher() -> ZADNetworkDispatcher {
-        var enviroment: ZADEnvironment = ZADEnvironment("Debugging", host: "http://35.199.159.218")
+        var enviroment: ZADEnvironment = ZADEnvironment("Debugging", host: "http://35.199.159.218/api")
         enviroment.headers = ["Content-Type":"application/json"]
         let dispatcher:ZADNetworkDispatcher = ZADNetworkDispatcher(environment: enviroment)
         

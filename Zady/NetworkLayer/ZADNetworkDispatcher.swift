@@ -39,7 +39,7 @@ public class ZADNetworkDispatcher: ZADDispatcher {
         switch request.parameters {
         case .body(let params):
             // Parameters are part of the body
-            if let params = params as? [String: String] { // just to simplify
+            if let params = params { // just to simplify
                 urlRequest.httpBody = try JSONSerialization.data(withJSONObject: params, options: .init(rawValue: 0))
             } else {
                 throw ZADNetworkErrors.badInput

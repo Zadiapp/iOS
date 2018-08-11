@@ -21,7 +21,7 @@ class ZADUserRequests: NSObject {
 }
 
 extension ZADUserRequests: ZADRequest {
-    var path: String {get {return "/register-guest"}}
+    var path: String {get {return "register-guest"}}
     var method: HTTPMethod {get {return .post}}
     var parameters: RequestParams {get {
        return .body(self.params)

@@ -13,7 +13,7 @@ class ZADNearByRequets: NSObject {
 }
 
 extension ZADNearByRequets: ZADRequest {
-    var path: String {get {return "/markets/nearby"}}
+    var path: String {get {return "markets/nearby"}}
     var method: HTTPMethod {get {return .get}}
     var parameters: RequestParams {get {
         return .url([:])

@@ -50,20 +50,20 @@ class ZADRequestNotificationVC: ZADViewController {
     }
     
     func showNextView() {
+        sendRequest()
         DispatchQueue.main.async {
             let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
             launcher.showNextViewController(fromViewController: self)
         }
     }
     
-    func showLoading() {
-        
-    }
-    
     func sendRequest() {
-        let registerTask = ZADRegisterTask(lang: "", deviceId: "", token: "", coordinate: CLLocationCoordinate2DMake(1, 1))
+        let language = ZADDefaults.sharedInstance.applicationLanguage?.rawValue
+        let Identifier = UIDevice.current.identifierForVendor?.uuidString
+        let coordinate = ZADDefaults.sharedInstance.userLocation
+        let token = ZADDefaults.sharedInstance.userToken
+        let registerTask = ZADRegisterTask(lang: language, deviceId: Identifier, token: token, coordinate: coordinate)
         registerTask.execute(dispatcher: ZADNetwork.getDispatcher()) { (user) in
-            
         }
     }
     

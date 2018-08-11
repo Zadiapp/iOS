@@ -74,6 +74,22 @@ class ZADDefaults: NSObject {
         }
     }
     
+    var userToken:String {
+        set {
+            UserDefaults.standard.set(newValue, forKey: "USER_TOKEN")
+            UserDefaults.standard.synchronize()
+        }
+        
+        get {
+            let userDefaultValue = UserDefaults.standard.string(forKey: "USER_TOKEN")
+            if let token = userDefaultValue {
+                return token
+            }
+            
+            return ""
+        }
+    }
+    
     var isNotificationDenied:Bool {
         set {
             UserDefaults.standard.set(newValue, forKey: "IS_NOTIFICATION_DENIED")

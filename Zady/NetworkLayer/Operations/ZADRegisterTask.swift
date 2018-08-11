@@ -14,7 +14,7 @@ class ZADRegisterTask: NSObject {
     var token:String?
     var coordinate:CLLocationCoordinate2D?
     
-    init(lang:String, deviceId:String, token:String?, coordinate:CLLocationCoordinate2D) {
+    init(lang:String?, deviceId:String?, token:String?, coordinate:CLLocationCoordinate2D?) {
         super.init()
         
         self.language = lang
@@ -39,8 +39,8 @@ class ZADRegisterTask: NSObject {
         }
         
         if let coordinate = self.coordinate {
-            params["latitude"] = coordinate.latitude
-            params["longitude"] = coordinate.longitude
+            params["latitude"] = NSNumber(value: coordinate.latitude)
+            params["longitude"] = NSNumber(value: coordinate.longitude)
         }
         
         return params
