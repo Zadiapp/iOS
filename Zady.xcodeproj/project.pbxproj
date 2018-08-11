@@ -315,6 +315,7 @@
 				E19EBF0520F7D9420031CE01 /* Resources */,
 				E1C2EA6F20FBFDE5008CDACA /* ShellScript */,
 				03B477A9B9514368AC9AC4DD /* [CP] Embed Pods Frameworks */,
+				0D92DC7F47AEE920266E8F40 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -474,6 +475,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zady/Pods-Zady-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0D92DC7F47AEE920266E8F40 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Zady/Pods-Zady-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Zady/Pods-Zady-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		71139BF3ED264E7C46A6CCC3 /* [CP] Check Pods Manifest.lock */ = {

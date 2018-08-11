@@ -12,6 +12,7 @@ import Fabric
 import FBSDKCoreKit
 import Firebase
 import UserNotifications
+import GoogleMaps
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -20,12 +21,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        // Override point for customization after application launch
         Fabric.with([Crashlytics.self])
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
         FirebaseApp.configure()
         Messaging.messaging().delegate = self
         UNUserNotificationCenter.current().delegate = self
+        GMSServices.provideAPIKey("AIzaSyAWk2lI24KauTsEqeMZGO8eDTSROdpPqso")
         
         self.window = UIWindow(frame: UIScreen.main.bounds)
         let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()

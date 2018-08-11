@@ -10,6 +10,7 @@ pod 'SwiftyJSON'
 pod 'FBSDKLoginKit'
 pod 'Firebase/Core'
 pod 'Firebase/Messaging'
+pod 'GoogleMaps'
   # Pods for Zady
 
   target 'ZadyTests' do

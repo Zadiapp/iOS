@@ -83,8 +83,8 @@ class ZADRequestLocationVC: ZADViewController {
 }
 
 extension ZADRequestLocationVC : ZADRequestMapLocationVCDelegate {
-    func didSelectLocation(mapItem:MKMapItem) {
-        ZADDefaults.sharedInstance.userLocation = mapItem.placemark.coordinate
+    func didSelectLocation(mapItem:CLLocationCoordinate2D) {
+        ZADDefaults.sharedInstance.userLocation = mapItem
         showNextViewController()
     }
 }
