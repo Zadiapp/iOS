@@ -10,7 +10,7 @@
 "requestLocationTitle" = "Your location";
 "requestLocationDescription" = "We need to have your location to show nearest supermarkets to you";
 "allow" = "Allow";
-"requestNotificationTitle" = "Allow Notifications";
+"requestNotificationTitle" = "Allowing Notification";
 "requestNotificationDescription" = "helps us to keep you updated with new steps on your order, we won't disturb you";
 "confirm" = "Confirm";
 "selectYourLocation" = "Select your location";

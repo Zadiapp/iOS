@@ -79,10 +79,8 @@ class ZADSelectLanguageVC: ZADViewController {
     }
     
     func showNextView() {
-        DispatchQueue.main.asyncAfter(deadline:.now() + 0.6) {
-            let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
-            launcher.showNextViewController(fromViewController: self)
-        }
+        let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
+        launcher.showNextViewController(fromViewController: self)
     }
     
     override func didReceiveMemoryWarning() {

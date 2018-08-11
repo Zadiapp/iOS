@@ -188,13 +188,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="InJ-T9-uuH">
-                                <rect key="frame" x="0.0" y="84" width="375" height="20.333333333333329"/>
+                                <rect key="frame" x="30" y="84" width="315" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="51R-2u-bfC">
-                                <rect key="frame" x="0.0" y="115.33333333333333" width="375" height="20.333333333333329"/>
+                                <rect key="frame" x="30" y="115.33333333333333" width="315" height="20.333333333333329"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -202,12 +202,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="51R-2u-bfC" firstAttribute="leading" secondItem="SMP-aH-OMo" secondAttribute="leading" id="6VJ-Jm-Hnp"/>
-                            <constraint firstItem="SMP-aH-OMo" firstAttribute="trailing" secondItem="InJ-T9-uuH" secondAttribute="trailing" id="Htj-BJ-HbN"/>
-                            <constraint firstItem="InJ-T9-uuH" firstAttribute="leading" secondItem="SMP-aH-OMo" secondAttribute="leading" id="MC9-hd-qp7"/>
+                            <constraint firstItem="51R-2u-bfC" firstAttribute="leading" secondItem="SMP-aH-OMo" secondAttribute="leading" constant="30" id="6VJ-Jm-Hnp"/>
+                            <constraint firstItem="SMP-aH-OMo" firstAttribute="trailing" secondItem="InJ-T9-uuH" secondAttribute="trailing" constant="30" id="Htj-BJ-HbN"/>
+                            <constraint firstItem="InJ-T9-uuH" firstAttribute="leading" secondItem="SMP-aH-OMo" secondAttribute="leading" constant="30" id="MC9-hd-qp7"/>
                             <constraint firstItem="SMP-aH-OMo" firstAttribute="bottom" secondItem="nuN-dv-iVX" secondAttribute="bottom" constant="53" id="U20-Kj-3mw"/>
                             <constraint firstItem="51R-2u-bfC" firstAttribute="top" secondItem="InJ-T9-uuH" secondAttribute="bottom" constant="11" id="hw4-ma-S73"/>
-                            <constraint firstItem="SMP-aH-OMo" firstAttribute="trailing" secondItem="51R-2u-bfC" secondAttribute="trailing" id="iiv-W9-BV2"/>
+                            <constraint firstItem="SMP-aH-OMo" firstAttribute="trailing" secondItem="51R-2u-bfC" secondAttribute="trailing" constant="30" id="iiv-W9-BV2"/>
                             <constraint firstItem="nuN-dv-iVX" firstAttribute="centerX" secondItem="2mF-eu-Rly" secondAttribute="centerX" id="mL3-rg-NHc"/>
                             <constraint firstItem="InJ-T9-uuH" firstAttribute="top" secondItem="SMP-aH-OMo" secondAttribute="top" constant="40" id="tzr-8o-ehG"/>
                             <constraint firstItem="pbM-u5-d5X" firstAttribute="centerY" secondItem="2mF-eu-Rly" secondAttribute="centerY" id="uWA-bF-66l"/>
