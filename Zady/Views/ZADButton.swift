@@ -15,9 +15,19 @@ class ZADButton: UIButton {
         self.layer.masksToBounds = true
         self.titleLabel?.font = UIFont.systemFont(ofSize: 21.2, weight: .bold)
     }
+        
+    func applyShadow(shadow:Bool)  {
+        if shadow {
+            addShadow()
+        } else {
+            removeShadow()
+        }
+    }
     
-    var applyShadow:Bool {set {newValue ? addShadow() : removeShadow() } get {return self.applyShadow}}
-    var borderColor:UIColor {set {addBorderColor(color: newValue)} get {return self.borderColor}}
+    func applyBorderColor(borderColor:UIColor)  {
+        addBorderColor(color: borderColor)
+    }
+    
     
     func addBorderColor(color:UIColor) {
         self.layer.borderWidth = 1.0
