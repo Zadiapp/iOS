@@ -38,9 +38,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ong-JB-Hpv" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
-                                <rect key="frame" x="74.666666666666686" y="628" width="226" height="65"/>
+                                <rect key="frame" x="59.666666666666657" y="628" width="255.99999999999997" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="F7X-1n-mgT"/>
+                                    <constraint firstAttribute="width" constant="256" id="F7X-1n-mgT"/>
                                     <constraint firstAttribute="height" constant="65" id="T9q-14-1xb"/>
                                 </constraints>
                                 <state key="normal" title="English" image="ic_lang_en">
@@ -51,10 +51,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ptp-mV-68y" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
-                                <rect key="frame" x="74.666666666666686" y="703" width="226" height="65"/>
+                                <rect key="frame" x="59.666666666666657" y="703" width="255.99999999999997" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="1dn-xS-Wrs"/>
-                                    <constraint firstAttribute="width" constant="226" id="gvi-zO-HEx"/>
+                                    <constraint firstAttribute="width" constant="256" id="gvi-zO-HEx"/>
                                 </constraints>
                                 <state key="normal" title="Arabic" image="ic_lang_ar">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -108,10 +108,10 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EFN-3c-oqe" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
-                                <rect key="frame" x="74.666666666666686" y="660" width="226" height="65"/>
+                                <rect key="frame" x="59.666666666666657" y="660" width="255.99999999999997" height="65"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="65" id="A6N-IW-uER"/>
-                                    <constraint firstAttribute="width" constant="226" id="B57-cP-D4X"/>
+                                    <constraint firstAttribute="width" constant="256" id="Fjf-3N-IxH"/>
                                 </constraints>
                                 <state key="normal" title="Allow">
                                     <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -175,9 +175,9 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nuN-dv-iVX" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
-                                <rect key="frame" x="74.666666666666686" y="660" width="226" height="65"/>
+                                <rect key="frame" x="59.666666666666657" y="660" width="255.99999999999997" height="65"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="226" id="pd1-A4-pX4"/>
+                                    <constraint firstAttribute="width" constant="256" id="ShU-Uu-GFb"/>
                                     <constraint firstAttribute="height" constant="65" id="wwT-d1-bDu"/>
                                 </constraints>
                                 <state key="normal" title="Allow">
@@ -264,16 +264,6 @@
                                     <constraint firstItem="wmd-It-0PV" firstAttribute="centerY" secondItem="q14-Tf-DUI" secondAttribute="centerY" id="mFr-0O-6qN"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-Bc-PTp" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
-                                <rect key="frame" x="25" y="697" width="325" height="65"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="65" id="bLf-7Z-1RG"/>
-                                </constraints>
-                                <state key="normal" title="Confirm"/>
-                                <connections>
-                                    <action selector="confirmLocation" destination="eID-Hr-Xyz" eventType="touchUpInside" id="hu1-bv-9er"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ty3-IB-VCs" customClass="GMSMapView">
                                 <rect key="frame" x="0.0" y="114" width="375" height="664"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -285,6 +275,17 @@
                                     <constraint firstAttribute="width" constant="20" id="ges-R1-Etm"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2n-Bc-PTp" customClass="ZADButton" customModule="Zady" customModuleProvider="target">
+                                <rect key="frame" x="59.666666666666657" y="697" width="255.99999999999997" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="256" id="5a3-up-4iM"/>
+                                    <constraint firstAttribute="height" constant="65" id="bLf-7Z-1RG"/>
+                                </constraints>
+                                <state key="normal" title="Confirm"/>
+                                <connections>
+                                    <action selector="confirmLocation" destination="eID-Hr-Xyz" eventType="touchUpInside" id="hu1-bv-9er"/>
+                                </connections>
+                            </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wb9-70-ecT">
                                 <rect key="frame" x="18" y="137" width="339" height="53"/>
                                 <subviews>
@@ -344,13 +345,12 @@
                             <constraint firstItem="377-xO-r3K" firstAttribute="centerX" secondItem="ty3-IB-VCs" secondAttribute="centerX" id="1J3-tO-xWK"/>
                             <constraint firstItem="ty3-IB-VCs" firstAttribute="top" secondItem="q14-Tf-DUI" secondAttribute="bottom" id="1Nh-sp-mLM"/>
                             <constraint firstItem="377-xO-r3K" firstAttribute="centerY" secondItem="ty3-IB-VCs" secondAttribute="centerY" id="6rl-NM-TMq"/>
-                            <constraint firstItem="Ptc-83-sOP" firstAttribute="trailing" secondItem="r2n-Bc-PTp" secondAttribute="trailing" constant="25" id="ANx-3W-lAK"/>
                             <constraint firstItem="q14-Tf-DUI" firstAttribute="leading" secondItem="Ptc-83-sOP" secondAttribute="leading" id="Bfg-Ym-axD"/>
                             <constraint firstItem="q14-Tf-DUI" firstAttribute="top" secondItem="Ptc-83-sOP" secondAttribute="top" id="FN8-yS-51j"/>
                             <constraint firstItem="Ptc-83-sOP" firstAttribute="trailing" secondItem="ty3-IB-VCs" secondAttribute="trailing" id="L0h-gy-zgM"/>
                             <constraint firstItem="Ptc-83-sOP" firstAttribute="trailing" secondItem="q14-Tf-DUI" secondAttribute="trailing" id="OKl-sq-Tcl"/>
+                            <constraint firstItem="r2n-Bc-PTp" firstAttribute="centerX" secondItem="REn-ew-awx" secondAttribute="centerX" id="Rfo-FI-wnV"/>
                             <constraint firstItem="Ptc-83-sOP" firstAttribute="trailing" secondItem="wb9-70-ecT" secondAttribute="trailing" constant="18" id="VgQ-yE-nNl"/>
-                            <constraint firstItem="r2n-Bc-PTp" firstAttribute="leading" secondItem="Ptc-83-sOP" secondAttribute="leading" constant="25" id="XZc-31-lCX"/>
                             <constraint firstItem="Ptc-83-sOP" firstAttribute="bottom" secondItem="r2n-Bc-PTp" secondAttribute="bottom" constant="16" id="YFV-YU-CKz"/>
                             <constraint firstItem="ty3-IB-VCs" firstAttribute="bottom" secondItem="Ptc-83-sOP" secondAttribute="bottom" id="jLO-K7-wqy"/>
                             <constraint firstItem="wb9-70-ecT" firstAttribute="leading" secondItem="Ptc-83-sOP" secondAttribute="leading" constant="18" id="lVM-qQ-f4q"/>
