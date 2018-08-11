@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import UserNotifications
+import CoreLocation
 
 class ZADRequestNotificationVC: ZADViewController {
 
@@ -52,6 +53,17 @@ class ZADRequestNotificationVC: ZADViewController {
         DispatchQueue.main.async {
             let launcher: ZADViewControllerLauncher = ZADViewControllerLauncher()
             launcher.showNextViewController(fromViewController: self)
+        }
+    }
+    
+    func showLoading() {
+        
+    }
+    
+    func sendRequest() {
+        let registerTask = ZADRegisterTask(lang: "", deviceId: "", token: "", coordinate: CLLocationCoordinate2DMake(1, 1))
+        registerTask.execute(dispatcher: ZADNetwork.getDispatcher()) { (user) in
+            
         }
     }
     

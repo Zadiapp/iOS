@@ -8,7 +8,7 @@
 
 import Foundation
 
-protocol Operation {
+protocol ZADOperation {
     associatedtype Output
     
     /// Request to execute

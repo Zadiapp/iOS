@@ -11,7 +11,6 @@ import UIKit
 class ZADSelectLanguageVC: ZADViewController {
     @IBOutlet weak var selectLanguageTitleLabel: UILabel!
     @IBOutlet weak var selectLanguageDescLabel: UILabel!
-    @IBOutlet weak var selectLanguageImageView: UIImageView!
     @IBOutlet weak var englishButton: ZADButton!
     @IBOutlet weak var arabicButton: ZADButton!
 

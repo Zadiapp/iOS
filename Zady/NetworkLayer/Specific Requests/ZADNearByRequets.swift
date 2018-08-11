@@ -18,6 +18,6 @@ extension ZADNearByRequets: ZADRequest {
     var parameters: RequestParams {get {
         return .url([:])
         }}
-    var headers: [String : Any]? {get { return ["Content-Type":"application/json", "Authorization" : "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly8zNS4xOTkuMTU5LjIxOC9hcGkvcmVnaXN0ZXItZ3Vlc3QiLCJpYXQiOjE1MzI3NzkxNTIsImV4cCI6MTUzMzk4ODc1MiwibmJmIjoxNTMyNzc5MTUyLCJqdGkiOiJhakJwQ29QWVdNVzZ2bjhJIn0.TcN1ADY_pMaRzfr3ZJXeUUYI5QvfcXHkR_L22GHzk9A"]}}
+    var headers: [String : Any]? {get { return ["Authorization" : "BearereyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOjMsImlzcyI6Imh0dHA6Ly8zNS4xOTkuMTU5LjIxOC9hcGkvcmVnaXN0ZXItZ3Vlc3QiLCJpYXQiOjE1MzI3NzkxNTIsImV4cCI6MTUzMzk4ODc1MiwibmJmIjoxNTMyNzc5MTUyLCJqdGkiOiJhakJwQ29QWVdNVzZ2bjhJIn0.TcN1ADY_pMaRzfr3ZJXeUUYI5QvfcXHkR_L22GHzk9A"]}}
     var dataType: DataType {get {return .JSON}}
 }
