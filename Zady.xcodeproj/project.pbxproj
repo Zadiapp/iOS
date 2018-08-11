@@ -27,6 +27,8 @@
 		E19EBF1520F7D9440031CE01 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E19EBF1320F7D9440031CE01 /* LaunchScreen.storyboard */; };
 		E19EBF2020F7D9440031CE01 /* ZadyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF1F20F7D9440031CE01 /* ZadyTests.swift */; };
 		E19EBF2B20F7D9440031CE01 /* ZadyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */; };
+		E1B4F648211F0B9200306D96 /* ZADUserRequests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4F647211F0B9200306D96 /* ZADUserRequests.swift */; };
+		E1B4F64A211F13C600306D96 /* ZADNearByRequets.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1B4F649211F13C600306D96 /* ZADNearByRequets.swift */; };
 		E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7120FC0670008CDACA /* ZADStrings.swift */; };
 		E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */; };
 		E1C9CC9F211DCE92005677C2 /* ZADViewControllerLauncher.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1C9CC9E211DCE92005677C2 /* ZADViewControllerLauncher.swift */; };
@@ -96,6 +98,8 @@
 		E19EBF2620F7D9440031CE01 /* ZadyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZadyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E19EBF2A20F7D9440031CE01 /* ZadyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZadyUITests.swift; sourceTree = "<group>"; };
 		E19EBF2C20F7D9440031CE01 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E1B4F647211F0B9200306D96 /* ZADUserRequests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADUserRequests.swift; sourceTree = "<group>"; };
+		E1B4F649211F13C600306D96 /* ZADNearByRequets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADNearByRequets.swift; sourceTree = "<group>"; };
 		E1C2EA7120FC0670008CDACA /* ZADStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADStrings.swift; sourceTree = "<group>"; };
 		E1C2EA7320FC0EDE008CDACA /* ZADLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADLocationManager.swift; sourceTree = "<group>"; };
 		E1C9CC9E211DCE92005677C2 /* ZADViewControllerLauncher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZADViewControllerLauncher.swift; sourceTree = "<group>"; };
@@ -187,6 +191,7 @@
 		E12A63AE21032D34008167E4 /* NetworkLayer */ = {
 			isa = PBXGroup;
 			children = (
+				E1B4F646211F0B6500306D96 /* Specific Requests */,
 				E12A63B121032D79008167E4 /* ZADRequest.swift */,
 				E12A63B32103357E008167E4 /* ZADEnvironment.swift */,
 				E12A63B5210335AC008167E4 /* ZADDispatcher.swift */,
@@ -254,6 +259,15 @@
 				E19EBF2C20F7D9440031CE01 /* Info.plist */,
 			);
 			path = ZadyUITests;
+			sourceTree = "<group>";
+		};
+		E1B4F646211F0B6500306D96 /* Specific Requests */ = {
+			isa = PBXGroup;
+			children = (
+				E1B4F647211F0B9200306D96 /* ZADUserRequests.swift */,
+				E1B4F649211F13C600306D96 /* ZADNearByRequets.swift */,
+			);
+			path = "Specific Requests";
 			sourceTree = "<group>";
 		};
 		E1C2EA7020FC063B008CDACA /* Helper */ = {
@@ -587,7 +601,9 @@
 				E1246AA1210B8549003A9009 /* ZADMapLocationController.swift in Sources */,
 				E1C2EA7420FC0EDE008CDACA /* ZADLocationManager.swift in Sources */,
 				E12A63B821033E1F008167E4 /* ZADNetworkDispatcher.swift in Sources */,
+				E1B4F64A211F13C600306D96 /* ZADNearByRequets.swift in Sources */,
 				E12A63B6210335AC008167E4 /* ZADDispatcher.swift in Sources */,
+				E1B4F648211F0B9200306D96 /* ZADUserRequests.swift in Sources */,
 				E1E66EB6210409CF00AEAE68 /* ZADButton.swift in Sources */,
 				E1C2EA7220FC0670008CDACA /* ZADStrings.swift in Sources */,
 				E150816321041D65009CAA77 /* ZADRequestLocationVC.swift in Sources */,

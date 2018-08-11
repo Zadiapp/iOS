@@ -97,7 +97,7 @@
                         </constraints>
                     </view>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="mvl-OC-L2n">
-                        <rect key="frame" x="56" y="8" width="52" height="52"/>
+                        <rect key="frame" x="56" y="10" width="52" height="52"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="52" id="PsP-VX-YHT"/>
                             <constraint firstAttribute="height" constant="52" id="RlG-Ad-RwU"/>
@@ -111,7 +111,7 @@
                     <constraint firstAttribute="trailing" secondItem="qq0-wo-iUQ" secondAttribute="trailing" constant="16" id="JhX-ha-X4T"/>
                     <constraint firstItem="cEA-n1-OhT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ORq-IY-JrP"/>
                     <constraint firstItem="qq0-wo-iUQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Q01-sC-rLw"/>
-                    <constraint firstItem="mvl-OC-L2n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="SCT-jx-HAC"/>
+                    <constraint firstItem="mvl-OC-L2n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="SCT-jx-HAC"/>
                     <constraint firstAttribute="bottom" secondItem="cEA-n1-OhT" secondAttribute="bottom" constant="16" id="hTB-BF-CIY"/>
                     <constraint firstItem="cEA-n1-OhT" firstAttribute="width" secondItem="qq0-wo-iUQ" secondAttribute="width" multiplier="0.4" id="ouu-SN-wkH"/>
                     <constraint firstItem="cEA-n1-OhT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="t3A-kz-pdx"/>
